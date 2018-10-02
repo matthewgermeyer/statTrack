@@ -7,5 +7,9 @@ public enum Actions {
   ASSIST,
   CLEVER,
   SKILLFUL,
-  BLOCK
+  BLOCK,
+  HALFTIME,
+  FULLTIME,
+  FREEKICK,
+  CORNER
 }

@@ -10,6 +10,7 @@ public class Team {
   private String managerName;
   private String homeGround;
   List<String> playerNames;
+  List<Player> players;
 
   private static final String SPURS_NAME = "Tottenham Hotspur FC";
   private static final String SPURS_MANAGER = "Mauricio Pochetino";
@@ -81,6 +82,14 @@ public class Team {
     return homeGround;
   }
 
+  public List<Player> getPlayers() {
+    return players;
+  }
+
+  public void setPlayers(List<Player> players) {
+    this.players = players;
+  }
+
   public void setHomeGround(String homeGround) {
     this.homeGround = homeGround;
   }
@@ -140,25 +149,26 @@ public class Team {
 
   public static Team generateSpursTeam() {
     Team spurs = new Team(SPURS_NAME, SPURS_MANAGER, SPURS_GROUND, SPURS_PLAYERS_NAMES);
+    spurs.setPlayers(generatePlayers(SPURS_PLAYERS_NAMES));
     System.out.printf("%n%n---> Generating Spurs%n%s", spurs.toString());
     return spurs;
   }
 
   public static Team generateArsenalTeam() {
     Team arsenal = new Team(ARSENAL_NAME, ARSENAL_MANAGER, ARSENAL_GROUND, ARSENAL_PLAYERS_NAMES);
+    arsenal.setPlayers(generatePlayers(ARSENAL_PLAYERS_NAMES));
     System.out.printf("%n%n---> Generating Arsenal%n%s", arsenal.toString());
     return arsenal;
   }
 
-  // returns a list of player objects from the Spurs Roster Constant
-  private static List<Player> generateSpursRoster() {
-    ArrayList<Player> spursRoster = new ArrayList<>();
-    if (SPURS_PLAYERS_NAMES != null) {
-      for (String name : SPURS_PLAYERS_NAMES) {
+  private static List<Player> generatePlayers(List<String> roster) {
+    ArrayList<Player> players = new ArrayList<>();
+    if (roster != null) {
+      for (String name : roster) {
         Player p = new Player(name);
-        spursRoster.add(p);
+        players.add(p);
       }
     }
-    return spursRoster;
+    return players;
   }
 }
