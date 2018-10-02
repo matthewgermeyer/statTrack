@@ -23,9 +23,7 @@ public class Prompter {
     String opponent = reader.readLine();
     System.out.printf("%n%nOk lets confirm: %n Home: %s%n Opponent: %s%n", home, opponent);
     List<Team> teams = Arrays.asList(
-        new Team("Spurs"),
-        new Team(opponent)
-    );
+        new Team("Spurs"), new Team(opponent));
     if (home) {
       Fixture homeFixture = new Fixture("Spurs", opponent, teams);
       homeFixture.setVenue("White Hart Lane");
@@ -45,8 +43,6 @@ public class Prompter {
         teams.get(1).getTeamName(),
         teams);
     return testFixture;
-
-
   }
 
   public Fixture fullTestSpursArsenal() {

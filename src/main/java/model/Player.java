@@ -4,24 +4,24 @@ import java.util.Map;
 import java.util.Objects;
 
 public class Player {
-  String name;
-  int number;
-  Position position;
-  Map<String, Integer> statbook;
+  private String name;
+  private int number;
+  private Position position;
+  private Map<Actions, Integer> statbook;
 
-  public Map<String, Integer> getStatbook() {
-    return statbook;
-  }
-
-  public void setStatbook(Map<String, Integer> statbook) {
-    this.statbook = statbook;
-  }
-
-  public enum Position {
+  private enum Position {
     GOALKEEPER,
     DEFENDER,
     MIDFIELDER,
-    FORWARD;
+    FORWARD
+  }
+
+  public Map<Actions, Integer> getStatbook() {
+    return statbook;
+  }
+
+  public void setStatbook(Map<Actions, Integer> statbook) {
+    this.statbook = statbook;
   }
 
   public Player(String name) {
@@ -74,6 +74,7 @@ public class Player {
   @Override
   public String toString() {
     return String.format("%s%n", name);
+
 
   }
 }
