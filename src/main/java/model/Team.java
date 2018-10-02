@@ -150,14 +150,15 @@ public class Team {
   public static Team generateSpursTeam() {
     Team spurs = new Team(SPURS_NAME, SPURS_MANAGER, SPURS_GROUND, SPURS_PLAYERS_NAMES);
     spurs.setPlayers(generatePlayers(SPURS_PLAYERS_NAMES));
-    System.out.printf("%n%n---> Generating Spurs%n%s", spurs.toString());
+    System.out.printf("%n%n---> Generating Spurs%n%s %n%n", spurs.toString());
     return spurs;
   }
 
   public static Team generateArsenalTeam() {
     Team arsenal = new Team(ARSENAL_NAME, ARSENAL_MANAGER, ARSENAL_GROUND, ARSENAL_PLAYERS_NAMES);
     arsenal.setPlayers(generatePlayers(ARSENAL_PLAYERS_NAMES));
-    System.out.printf("%n%n---> Generating Arsenal%n%s", arsenal.toString());
+    System.out.printf("%n%n---> Generating Arsenal%n%s %n%n", arsenal.toString());
+
     return arsenal;
   }
 
@@ -171,4 +172,15 @@ public class Team {
     }
     return players;
   }
-}
+
+  public Player getPlayerByName(String name){
+    for (Player p : players) {
+      if (p.getName().equals(name)) {
+        return p;
+      }
+      System.out.println("Could not find in list");
+    }
+    return null;
+  }
+
+}//class

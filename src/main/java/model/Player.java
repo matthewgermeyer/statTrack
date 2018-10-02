@@ -1,5 +1,6 @@
 package model;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
@@ -7,7 +8,24 @@ public class Player {
   private String name;
   private int number;
   private Position position;
-  private Map<Actions, Integer> statbook;
+  private Map<Actions, Detail> statbook;
+
+  public void jot(Actions toAdd, Detail detail) {
+    if (statbook != null) {
+      statbook.put(toAdd, detail);
+      System.out.printf(
+          "%n ------> Added Action : %s%n " +
+          "Description: %s%n",
+          toAdd.toString(),
+          detail.toString());
+      setStatbook(statbook);
+
+    }
+    Map<Actions, Detail> statbook = new HashMap<>();
+    statbook.put(toAdd, detail);
+    setStatbook(statbook);
+
+  }
 
   private enum Position {
     GOALKEEPER,
@@ -16,11 +34,11 @@ public class Player {
     FORWARD
   }
 
-  public Map<Actions, Integer> getStatbook() {
+  public Map<Actions, Detail> getStatbook() {
     return statbook;
   }
 
-  public void setStatbook(Map<Actions, Integer> statbook) {
+  public void setStatbook(Map<Actions, Detail> statbook) {
     this.statbook = statbook;
   }
 
