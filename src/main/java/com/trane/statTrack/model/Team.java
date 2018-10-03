@@ -7,6 +7,7 @@ import java.util.Objects;
 
 public class Team {
   private String teamName;
+  private Long id;
   private String managerName;
   private String homeGround;
   List<String> playerNames;
@@ -183,4 +184,11 @@ public class Team {
     return null;
   }
 
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
 }//class

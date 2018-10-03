@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title> Derby Day! </title>
+</head>
+<body>
+<h1>Welcome to the North London Derby! </h1>
+<div class="container">
+    <h2>Spurs vs. Arsenal AND IT'S LIVE!!</h2>
+    <div class="container">
+        <ul>
+            <li th:each="name : ${roster}" th:text="${name}"></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2 th:text="${instruction}"> Should not see this. </h2>
+        <form action="/nld/tracker/update" method="post">
+            <table>
+                <tr>
+                    <th>Active</th>
+                    <th>Name</th>
+                    <th>Goals</th>
+                    <th>Passes</th>
+                </tr>
+
+                <tr th:each="name: ${roster}">
+
+                    <td><input type="checkbox" name="active"/></td>
+                    <td th:text="${name}"></td>
+                    <td><button>Add Goal</button></td>
+                    <td> <button>Add Pass</button></td>
+
+                </tr>
+
+            </table>
+            <button type="submit">Update Roster</button>
+        </form>
+    </div>
+
+    <div class="container">
+
+        <table>
+            <tr>
+
+                <th>Name</th>
+                <th>Goals</th>
+                <th>Passes</th>
+            </tr>
+
+            <tr th:each="name: ${starters}">
+                <td th:text="${name}"></td>
+                <td><button>Add Goal</button></td>
+                <td> <button>Add Pass</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+</html>

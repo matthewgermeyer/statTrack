@@ -24,6 +24,8 @@ public class Fixture {
     this.date = LocalDateTime.now().toString().substring(0, 10);
   }
 
+  public Fixture() {}
+
   public String gethomeTeamName() {
     return homeTeamName;
   }

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>Fixtures</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}"/>
 </head>
 <body>
 <h1>Welcome to Fixtures </h1>
+<p>It's derby day lads..are you ready to get started?!</p>
 
 
-<form action="#" method="post">
-    <button type="submit">Go to Fixture!</button>
+<form action="/nld" method="get">
+    <button type="submit">Go to NLD!</button>
 </form>
+
+<a href="/nld">This should also work </a>
+
+<a href="/nld"><Button>Go to NLD</Button></a>
 
 </body>
 </html>

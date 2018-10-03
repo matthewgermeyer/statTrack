@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>Index</title>
@@ -9,6 +9,9 @@
 <form action="/fixtures" method="get">
     <button type="submit">Go!</button>
 </form>
+
+<!--<a th:href="{/fixtures}">Link to Fixtures</a>-->
+<!--<a th:href="${/fixtures}"><button>Go to Fixtures</button></a>-->
 
 </body>
 </html>
