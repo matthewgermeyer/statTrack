@@ -1,4 +1,10 @@
-package controller;
+package com.trane.statTrack.controller;
+
+import com.trane.statTrack.model.Actions;
+import com.trane.statTrack.model.Detail;
+import com.trane.statTrack.model.Fixture;
+import com.trane.statTrack.model.Player;
+import com.trane.statTrack.model.Team;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,11 +12,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import model.Actions;
-import model.Detail;
-import model.Fixture;
-import model.Player;
-import model.Team;
 
 public class Tracker {
   private static BufferedReader reader;

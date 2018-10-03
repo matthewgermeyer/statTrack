@@ -1,4 +1,4 @@
-package model;
+package com.trane.statTrack.model;
 
 import java.util.HashMap;
 import java.util.Map;

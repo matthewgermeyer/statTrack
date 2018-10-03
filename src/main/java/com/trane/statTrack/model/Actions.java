@@ -1,4 +1,4 @@
-package model;
+package com.trane.statTrack.model;
 
 public enum Actions {
   PASS,

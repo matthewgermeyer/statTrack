@@ -1,4 +1,4 @@
-package model;
+package com.trane.statTrack.model;
 
 
 import java.text.SimpleDateFormat;

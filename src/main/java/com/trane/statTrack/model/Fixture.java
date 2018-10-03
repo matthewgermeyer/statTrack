@@ -1,4 +1,4 @@
-package model;
+package com.trane.statTrack.model;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
