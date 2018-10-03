@@ -8,8 +8,5 @@ public enum Actions {
   CLEVER,
   SKILLFUL,
   BLOCK,
-//  HALFTIME,
-//  FULLTIME,
-//  FREEKICK,
-//  CORNER
+  SAVE
 }

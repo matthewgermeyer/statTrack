@@ -6,8 +6,6 @@ import java.util.Objects;
 
 public class Player {
   private String name;
-  private int number;
-  private Position position;
   private Map<Actions, Detail> statbook;
 
   public void jot(Actions toAdd, Detail detail) {
@@ -15,7 +13,7 @@ public class Player {
       statbook.put(toAdd, detail);
       System.out.printf(
           "%n ------> Added Action : %s%n " +
-          "Description: %s%n",
+              "Description: %s%n",
           toAdd.toString(),
           detail.toString());
       setStatbook(statbook);
@@ -25,13 +23,6 @@ public class Player {
     statbook.put(toAdd, detail);
     setStatbook(statbook);
 
-  }
-
-  private enum Position {
-    GOALKEEPER,
-    DEFENDER,
-    MIDFIELDER,
-    FORWARD
   }
 
   public Map<Actions, Detail> getStatbook() {
@@ -54,22 +45,6 @@ public class Player {
     this.name = name;
   }
 
-  public int getNumber() {
-    return number;
-  }
-
-  public void setNumber(int number) {
-    this.number = number;
-  }
-
-  public Position getPosition() {
-    return position;
-  }
-
-  public void setPosition(Position position) {
-    this.position = position;
-  }
-
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -79,20 +54,16 @@ public class Player {
       return false;
     }
     Player player = (Player) o;
-    return number == player.number &&
-        Objects.equals(name, player.name) &&
-        position == player.position;
+    return Objects.equals(name, player.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name, number, position);
+    return Objects.hash(name);
   }
 
   @Override
   public String toString() {
     return String.format("%s%n", name);
-
-
   }
 }

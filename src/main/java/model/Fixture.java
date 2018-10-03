@@ -2,32 +2,26 @@ package model;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Fixture {
-  private  List<Team> teams;
+  private List<Team> teams;
   private String homeTeamName;
   private String awayTeamName;
   private Team homeTeam;
   private Team awayTeam;
   private String venue;
   private String date;
-  private String result;
-  private Map<Object, String> timeline;
 
 
   public Fixture(Team home, Team away) {
-    this.teams = Arrays.asList(home,away);
+    this.teams = Arrays.asList(home, away);
     this.homeTeam = home;
     this.awayTeam = away;
     this.homeTeamName = home.getTeamName();
     this.awayTeamName = away.getTeamName();
     this.venue = home.getHomeGround();
-    this.result = "Game has not started";
-    this.date = LocalDateTime.now().toString().substring(0,10);
-    this.timeline = new HashMap<>();
+    this.date = LocalDateTime.now().toString().substring(0, 10);
   }
 
   public String gethomeTeamName() {
@@ -46,20 +40,12 @@ public class Fixture {
     this.venue = venue;
   }
 
-  public String getResult() {
-    return result;
-  }
-
-  public void setResult(String result) {
-    this.result = result;
-  }
-
   public String getDate() {
     return date;
   }
 
   public void setDate() {
-    this.date = LocalDateTime.now().toString().substring(0,10);
+    this.date = LocalDateTime.now().toString().substring(0, 10);
   }
 
   public List<Team> getTeams() {
@@ -68,10 +54,6 @@ public class Fixture {
 
   public void setTeams(List<Team> teams) {
     this.teams = teams;
-  }
-
-  public Map<Object, String> getTimeline() {
-    return timeline;
   }
 
   public String getHomeTeamName() {
@@ -111,11 +93,11 @@ public class Fixture {
   }
 
   public static Fixture northLondonDerby() {
-  Fixture northLondonDerby = new Fixture(
-      Team.generateSpursTeam(),
-      Team.generateArsenalTeam()
-  );
-  return northLondonDerby;
+    Fixture northLondonDerby = new Fixture(
+        Team.generateSpursTeam(),
+        Team.generateArsenalTeam()
+    );
+    return northLondonDerby;
   }
 
   @Override
@@ -124,7 +106,7 @@ public class Fixture {
         ", homeTeamName='" + homeTeamName + '\'' +
         ", awayTeamName='" + awayTeamName + '\'' +
         ", venue='" + venue + '\'' +
-        ", result='" + result + '\'' +
+        +'\'' +
         ", date='" + date + '\'' +
         '}';
   }
