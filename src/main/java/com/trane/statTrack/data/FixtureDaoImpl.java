@@ -1,6 +1,6 @@
 //package com.trane.statTrack.data;
 //
-//import com.trane.statTrack.model.Fixture;
+//import Fixture;
 //import org.hibernate.Session;
 //import org.hibernate.SessionFactory;
 //import org.springframework.beans.factory.annotation.Autowired;

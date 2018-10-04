@@ -3,6 +3,7 @@ package com.trane.statTrack.model;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class Fixture {
   private List<Team> teams;
@@ -13,7 +14,7 @@ public class Fixture {
   private String venue;
   private String date;
 
-
+  //constructors 2 : full(minus id) and empty
   public Fixture(Team home, Team away) {
     this.teams = Arrays.asList(home, away);
     this.homeTeam = home;
@@ -26,29 +27,8 @@ public class Fixture {
 
   public Fixture() {}
 
-  public String gethomeTeamName() {
-    return homeTeamName;
-  }
+  //getters and setters
 
-  public String getawayTeamName() {
-    return awayTeamName;
-  }
-
-  public String getVenue() {
-    return venue;
-  }
-
-  public void setVenue(String venue) {
-    this.venue = venue;
-  }
-
-  public String getDate() {
-    return date;
-  }
-
-  public void setDate() {
-    this.date = LocalDateTime.now().toString().substring(0, 10);
-  }
 
   public List<Team> getTeams() {
     return teams;
@@ -90,18 +70,23 @@ public class Fixture {
     this.awayTeam = awayTeam;
   }
 
+  public String getVenue() {
+    return venue;
+  }
+
+  public void setVenue(String venue) {
+    this.venue = venue;
+  }
+
+  public String getDate() {
+    return date;
+  }
+
   public void setDate(String date) {
     this.date = date;
   }
 
-  public static Fixture northLondonDerby() {
-    Fixture northLondonDerby = new Fixture(
-        Team.generateSpursTeam(),
-        Team.generateArsenalTeam()
-    );
-    return northLondonDerby;
-  }
-
+  //overriden methods
   @Override
   public String toString() {
     return "Fixture{" +
@@ -112,4 +97,35 @@ public class Fixture {
         ", date='" + date + '\'' +
         '}';
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    Fixture fixture = (Fixture) o;
+    return Objects.equals(teams, fixture.teams) &&
+        Objects.equals(homeTeamName, fixture.homeTeamName) &&
+        Objects.equals(awayTeamName, fixture.awayTeamName) &&
+        Objects.equals(homeTeam, fixture.homeTeam) &&
+        Objects.equals(awayTeam, fixture.awayTeam) &&
+        Objects.equals(venue, fixture.venue) &&
+        Objects.equals(date, fixture.date);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(teams, homeTeamName, awayTeamName, homeTeam, awayTeam, venue, date);
+  }
+
+  public static Fixture generateNorthLondonDerby() {
+    Fixture nld = new Fixture(Team.generateSpursTeam(), Team.generateArsenalTeam());
+    return nld;
+  }
+
+
+
 }

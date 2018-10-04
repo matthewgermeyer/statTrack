@@ -8,33 +8,21 @@ public class Player {
   private String name;
   private Map<Actions, Detail> statbook;
 
-  public void jot(Actions toAdd, Detail detail) {
-    if (statbook != null) {
-      statbook.put(toAdd, detail);
-      System.out.printf(
-          "%n ------> Added Action : %s%n " +
-              "Description: %s%n",
-          toAdd.toString(),
-          detail.toString());
-      setStatbook(statbook);
+  //constructors
+  public Player(){}
 
-    }
-    Map<Actions, Detail> statbook = new HashMap<>();
-    statbook.put(toAdd, detail);
-    setStatbook(statbook);
-
+  public Player(String name) {
+    this.name = name;
+    this.statbook = new HashMap<>();
   }
 
+  //getters and setters
   public Map<Actions, Detail> getStatbook() {
     return statbook;
   }
 
   public void setStatbook(Map<Actions, Detail> statbook) {
     this.statbook = statbook;
-  }
-
-  public Player(String name) {
-    this.name = name;
   }
 
   public String getName() {
@@ -45,6 +33,7 @@ public class Player {
     this.name = name;
   }
 
+  //Overriden methods
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -66,4 +55,27 @@ public class Player {
   public String toString() {
     return String.format("%s%n", name);
   }
+
+  //Statbook methods
+  //TODO: write method to jot into statbook / write test cases
+  public void jot(Actions toAdd, Detail detail) {
+    if (statbook != null) {
+      statbook.put(toAdd, detail);
+      System.out.printf(
+          "%n ------> Added Action : %s%n " +
+              "Description: %s%n",
+          toAdd.toString(),
+          detail.toString());
+      setStatbook(statbook);
+
+    }
+    Map<Actions, Detail> statbook = new HashMap<>();
+    statbook.put(toAdd, detail);
+    setStatbook(statbook);
+
+  }
+
+
 }
+
+

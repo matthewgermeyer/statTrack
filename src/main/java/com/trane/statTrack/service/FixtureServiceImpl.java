@@ -11,8 +11,7 @@ public class FixtureServiceImpl implements FixtureService {
   @Override
   public List<Fixture> findAll() {
     List<Fixture> fixtures = Arrays.asList(
-        Fixture.northLondonDerby()
-    ) ;
+        Fixture.generateNorthLondonDerby());
     return fixtures;
   }
 

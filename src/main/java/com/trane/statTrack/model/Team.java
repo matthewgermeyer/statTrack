@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class Team {
-  private String teamName;
   private Long id;
+  private String teamName;
   private String managerName;
   private String homeGround;
   List<String> playerNames;
@@ -53,9 +53,13 @@ public class Team {
       "Welbeck"
   );
 
-
+  //Constructors (3) : short, long, empty
   public Team(String teamName) {
     this.teamName = teamName;
+    this.managerName= "not set";
+    this.homeGround= "not set";
+    this.playerNames = new ArrayList<>();
+    this.players = new ArrayList<>();
 
   }
 
@@ -65,8 +69,12 @@ public class Team {
     this.managerName = managerName;
     this.homeGround = homeGround;
     this.playerNames = playerNames;
+    this.players = generatePlayers(playerNames);
   }
 
+  public Team() {}
+
+  //getters and setters
   public String getTeamName() {
     return teamName;
   }
@@ -103,6 +111,15 @@ public class Team {
     this.playerNames = playerNames;
   }
 
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  //Overriden methods
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -163,7 +180,7 @@ public class Team {
     return arsenal;
   }
 
-  private static List<Player> generatePlayers(List<String> roster) {
+  public static List<Player> generatePlayers(List<String> roster) {
     ArrayList<Player> players = new ArrayList<>();
     if (roster != null) {
       for (String name : roster) {
@@ -174,21 +191,4 @@ public class Team {
     return players;
   }
 
-  public Player getPlayerByName(String name){
-    for (Player p : players) {
-      if (p.getName().equals(name)) {
-        return p;
-      }
-      System.out.println("Could not find in list");
-    }
-    return null;
-  }
-
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
-  }
 }//class
