@@ -5,18 +5,31 @@ import java.util.Map;
 import java.util.Objects;
 
 public class Player {
+  private Long id;
   private String name;
   private Map<Actions, Detail> statbook;
 
   //constructors
-  public Player(){}
+  public Player() {
+  }
 
   public Player(String name) {
+
     this.name = name;
     this.statbook = new HashMap<>();
+
   }
 
   //getters and setters
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
   public Map<Actions, Detail> getStatbook() {
     return statbook;
   }

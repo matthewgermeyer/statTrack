@@ -12,5 +12,4 @@ public interface TeamService {
   Team generateSpursTeam();
   Team generateArsenalTeam();
 
-
 }

@@ -1,12 +1,12 @@
 package com.trane.statTrack.service;
 
 import com.trane.statTrack.model.Fixture;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
 
-@Service
+@Component
 public class FixtureServiceImpl implements FixtureService {
   @Override
   public List<Fixture> findAll() {
@@ -17,6 +17,7 @@ public class FixtureServiceImpl implements FixtureService {
 
   @Override
   public Fixture findById(Long id) {
+
     return null;
   }
 

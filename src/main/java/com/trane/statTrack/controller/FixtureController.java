@@ -5,7 +5,7 @@ import com.trane.statTrack.service.FixtureService;
 import com.trane.statTrack.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -33,18 +33,18 @@ public class FixtureController {
   }
 
   @RequestMapping("/nld/tracker")
-  public String trackerGet(Model model) {
+  public String trackerGet(ModelMap modelMap) {
     Team spurs = teamService.generateSpursTeam();
     List<String> roster = spurs.getPlayerNames();
     String instruction = "Select the starting players!";
-    model.addAttribute("instruction", instruction);
-    model.addAttribute("team", spurs);
-    model.addAttribute("roster", roster);
+    modelMap.addAttribute("instruction", instruction);
+    modelMap.addAttribute("team", spurs);
+    modelMap.addAttribute("roster", roster);
     return "NLDtracker";
   }
 
   @RequestMapping(value = "/nld/tracker/update", method= RequestMethod.POST)
-  public String trackerUpdatePost(Model model) {
+  public String trackerUpdatePost(ModelMap modelMap) {
     Team spurs = teamService.generateSpursTeam();
     List<String> roster = spurs.getPlayerNames();
     List<String> starters = Arrays.asList(
@@ -53,8 +53,8 @@ public class FixtureController {
         roster.get(6),
         roster.get(9)
     );
-    model.addAttribute("team", spurs);
-    model.addAttribute("starters", starters);
+    modelMap.addAttribute("team", spurs);
+    modelMap.addAttribute("starters", starters);
 
     return "NLDtracker";
   }

@@ -1,23 +1,24 @@
 package com.trane.statTrack.service;
 
 import com.trane.statTrack.model.Team;
-
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
 
-@Service
+@Component
 public class TeamServiceImpl implements TeamService {
   @Override
   public Team generateSpursTeam() {
      Team spurs = Team.generateSpursTeam();
+     spurs.setId(1L);
      return spurs;
   }
 
   @Override
   public Team generateArsenalTeam() {
     Team arsenal = Team.generateArsenalTeam();
+    arsenal.setId(2L);
     return arsenal;
   }
 
@@ -41,6 +42,7 @@ public class TeamServiceImpl implements TeamService {
 
   @Override
   public void save(Team team) {
+
     System.out.printf("Saving %s... %n", team.getTeamName());
   }
 

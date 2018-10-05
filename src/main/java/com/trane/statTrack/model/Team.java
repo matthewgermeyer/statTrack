@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class Team {
+  //counter for players instantiated
+  private static Long playerCounter = 1L;
   private Long id;
   private String teamName;
   private String managerName;
@@ -185,6 +187,8 @@ public class Team {
     if (roster != null) {
       for (String name : roster) {
         Player p = new Player(name);
+        p.setId(playerCounter);
+        playerCounter++;
         players.add(p);
       }
     }
