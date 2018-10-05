@@ -6,14 +6,11 @@ import java.util.List;
 
 public interface PlayerDAO {
 
-  Player findPlayerById(Long id);
-
+  List<Player> findAll();
+  Player findById(Long id);
+  Long save(Player player);
   void update(Player player);
+  void delete(Long id);
 
-  Long savePlayer(Player player);
-
-  void deletePlayerById(Long id);
-
-  List<Player> fetchAllPlayers();
 
 }

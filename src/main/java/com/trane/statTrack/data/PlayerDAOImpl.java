@@ -3,15 +3,19 @@ package com.trane.statTrack.data;
 import com.trane.statTrack.model.Player;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 
+@Repository
 public class PlayerDAOImpl implements PlayerDAO {
-  SessionFactory sessionFactory;
+  @Autowired
+  private SessionFactory sessionFactory;
 
-  public Player findPlayerById(Long id) {
+  public Player findById(Long id) {
     Session session = sessionFactory.openSession();
     Player player = session.get(Player.class, id);
     session.close();
@@ -26,7 +30,7 @@ public class PlayerDAOImpl implements PlayerDAO {
     session.close();
   }
 
-  public Long savePlayer(Player player) {
+  public Long save(Player player) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
     Long id = (Long)session.save(player);
@@ -36,16 +40,16 @@ public class PlayerDAOImpl implements PlayerDAO {
 
   }
 
-  public void deletePlayerById(Long id) {
+  public void delete(Long id) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    session.delete(findPlayerById(id));
+    session.delete(findById(id));
     session.getTransaction().commit();
     session.close();
 
   }
 
-  public List<Player> fetchAllPlayers() {
+  public List<Player> findAll() {
     // Open a session
     Session session = sessionFactory.openSession();
 

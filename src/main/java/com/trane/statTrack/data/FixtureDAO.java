@@ -6,14 +6,14 @@ import java.util.List;
 
 public interface FixtureDAO {
 
-  Fixture findFixtureById(Long id);
+  Fixture findById(Long id);
 
   void update(Fixture fixture);
 
-  Long saveFixture(Fixture fixture);
+  Long save(Fixture fixture);
 
-  void deleteFixtureById(Long id);
+  void delete(Long id);
 
-  List<Fixture> fetchAllFixtures();
+  List<Fixture> findAll();
 
 }

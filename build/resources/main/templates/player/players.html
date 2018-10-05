@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head('players')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+<h1> Players </h1>
+<div class="container">
+    <ul>
+        <li th:each="player : ${players}" th:text="${name}">Name</li>
+    </ul>
+</div>
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

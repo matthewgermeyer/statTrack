@@ -4,15 +4,34 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+@Entity
 public class Team {
-  //counter for players instantiated
-  private static Long playerCounter = 1L;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  @Column
+  @NotNull
+  @Size(min=4, max=30)
   private String teamName;
+  @Column
   private String managerName;
+  @Column
   private String homeGround;
+  @ElementCollection
+  @CollectionTable(name = "player_names")
   List<String> playerNames;
+  @OneToMany(mappedBy = "team")
   List<Player> players;
 
   private static final String SPURS_NAME = "Tottenham Hotspur FC";
@@ -62,7 +81,6 @@ public class Team {
     this.homeGround= "not set";
     this.playerNames = new ArrayList<>();
     this.players = new ArrayList<>();
-
   }
 
   public Team(String teamName, String managerName, String homeGround,
@@ -142,7 +160,7 @@ public class Team {
     return Objects.hash(teamName, managerName, homeGround, playerNames);
   }
 
-  @Override
+    @Override
   public String toString() {
     String rosterString = rosterString(playerNames);
     String result = String.format(
@@ -187,8 +205,6 @@ public class Team {
     if (roster != null) {
       for (String name : roster) {
         Player p = new Player(name);
-        p.setId(playerCounter);
-        playerCounter++;
         players.add(p);
       }
     }

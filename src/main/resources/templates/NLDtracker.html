@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8"/>
-    <title> Derby Day! </title>
-</head>
+<head th:replace="layout :: head('tracker')"></head>
 <body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
 <h1>Welcome to the North London Derby! </h1>
 <div class="container">
     <h2>Spurs vs. Arsenal AND IT'S LIVE!!</h2>
@@ -59,6 +59,6 @@
     </div>
 
 </div>
-
+<div th:replace="layout :: scripts"></div>
 </body>
 </html>

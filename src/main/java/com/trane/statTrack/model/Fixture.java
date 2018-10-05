@@ -5,19 +5,25 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+import javax.persistence.Transient;
+@Entity
 public class Fixture {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  @Transient
   private List<Team> teams;
+  @Column
   private String homeTeamName;
+  @Column
   private String awayTeamName;
-
+  @Transient
   private Team homeTeam;
+  @Transient
   private Team awayTeam;
   @Column
   private String venue;
@@ -35,10 +41,17 @@ public class Fixture {
     this.date = LocalDateTime.now().toString().substring(0, 10);
   }
 
-  public Fixture() {}
+  public Fixture() {
+  }
 
   //getters and setters
+  public Long getId() {
+    return id;
+  }
 
+  public void setId(Long id) {
+    this.id = id;
+  }
 
   public List<Team> getTeams() {
     return teams;
@@ -132,10 +145,9 @@ public class Fixture {
   }
 
   public static Fixture generateNorthLondonDerby() {
-    Fixture nld = new Fixture(Team.generateSpursTeam(), Team.generateArsenalTeam());
-    return nld;
-  }
+    return new Fixture(Team.generateSpursTeam(), Team.generateArsenalTeam());
 
+  }
 
 
 }

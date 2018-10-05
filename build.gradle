@@ -35,5 +35,6 @@ dependencies {
     compile 'org.apache.tomcat:tomcat-dbcp:8.0.32'
     compile 'com.h2database:h2:1.4.191'
     compile 'javax.transaction:jta:1.1'
+    compile 'org.hashids:hashids:1.0.1'
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }

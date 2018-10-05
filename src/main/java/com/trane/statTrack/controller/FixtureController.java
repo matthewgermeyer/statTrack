@@ -27,21 +27,16 @@ public class FixtureController {
     return "NLD";
   }
 
+  @RequestMapping("/NLD")
+  public String nldCaps() {
+    return "NLD";
+  }
+
   @RequestMapping("/nld")
   public String nld() {
     return "NLD";
   }
 
-  @RequestMapping("/nld/tracker")
-  public String trackerGet(ModelMap modelMap) {
-    Team spurs = teamService.generateSpursTeam();
-    List<String> roster = spurs.getPlayerNames();
-    String instruction = "Select the starting players!";
-    modelMap.addAttribute("instruction", instruction);
-    modelMap.addAttribute("team", spurs);
-    modelMap.addAttribute("roster", roster);
-    return "NLDtracker";
-  }
 
   @RequestMapping(value = "/nld/tracker/update", method= RequestMethod.POST)
   public String trackerUpdatePost(ModelMap modelMap) {

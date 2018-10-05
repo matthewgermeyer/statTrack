@@ -6,6 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Player {
@@ -13,20 +16,30 @@ public class Player {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   @Column
+  @NotNull
+  @Size(min=4)
   private String name;
+  @ManyToOne
+  @NotNull
+  private Team team;
 
   //default constructor for JPA
   public Player() {
   }
 
   public Player(String name) {
-
     this.name = name;
-
-
   }
 
   //getters and setters
+
+  public Team getTeam() {
+    return team;
+  }
+
+  public void setTeam(Team team) {
+    this.team = team;
+  }
 
   public Long getId() {
     return id;
@@ -54,12 +67,14 @@ public class Player {
       return false;
     }
     Player player = (Player) o;
-    return Objects.equals(name, player.name);
+    return Objects.equals(id, player.id) &&
+        Objects.equals(name, player.name) &&
+        Objects.equals(team, player.team);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name);
+    return Objects.hash(id, name, team);
   }
 
   @Override
