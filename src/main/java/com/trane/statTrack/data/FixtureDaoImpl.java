@@ -1,69 +1,60 @@
-//package com.trane.statTrack.data;
-//
-//import Fixture;
-//import org.hibernate.Session;
-//import org.hibernate.SessionFactory;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Repository;
-//
-//import java.util.List;
-//import javax.persistence.criteria.CriteriaBuilder;
-//import javax.persistence.criteria.CriteriaQuery;
-//
-//@Repository
-//public class FixtureDaoImpl implements FixtureDao {
-//  @Autowired
-//  SessionFactory sessionFactory;
-//
-//  @Override
-//  public List<Fixture> findAll() {
-//    Session session = sessionFactory.openSession();
-//
-//    // DEPRECATED as of Hibernate 5.2.0
-//    // List<Gif> gifs = session.createCriteria(Gif.class).list();
-//
-//    // Create CriteriaBuilder
-//    CriteriaBuilder builder = session.getCriteriaBuilder();
-//
-//    // Create CriteriaQuery
-//    CriteriaQuery<Fixture> criteria = builder.createQuery(Fixture.class);
-//
-//    // Specify criteria root
-//    criteria.from(Fixture.class);
-//
-//    // Execute query
-//    List<Fixture> fixtures = session.createQuery(criteria).getResultList();
-//
-//    session.close();
-//    return fixtures;
-//  }
-//
-//  @Override
-//  public Fixture findById(Long id) {
-//    Session session = sessionFactory.openSession();
-//    session.getTransaction();
-//    Fixture fix = session.get(Fixture.class, id);
-//    session.close();
-//    return fix;
-//  }
-//
-//  @Override
-//  public void save(Fixture fixture) {
-//    Session session = sessionFactory.openSession();
-//    session.getTransaction();
-//    session.saveOrUpdate(fixture);
-//    session.getTransaction().commit();
-//    session.close();
-//
-//  }
-//
-//  @Override
-//  public void delete(Fixture fixture) {
-//    Session session = sessionFactory.openSession();
-//    session.getTransaction();
-//    session.delete(fixture);
-//    session.getTransaction().commit();
-//    session.close();
-//
-//  }
-//}
+package com.trane.statTrack.data;
+
+import com.trane.statTrack.model.Fixture;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import java.util.List;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+
+
+public class FixtureDaoImpl implements FixtureDAO {
+  SessionFactory sessionFactory;
+
+  public Fixture findFixtureById(Long id) {
+    Session session = sessionFactory.openSession();
+    Fixture fixture = session.get(Fixture.class, id);
+    session.close();
+    return fixture;
+  }
+
+  public void update(Fixture fixture) {
+   Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    session.update(fixture);
+    session.getTransaction().commit();
+    session.close();
+  }
+
+  public Long saveFixture(Fixture fixture) {
+   Session  session = sessionFactory.openSession();
+    session.beginTransaction();
+    Long id = (Long)session.save(fixture);
+    session.getTransaction().commit();
+    session.close();
+    return id;
+
+  }
+
+  public void deleteFixtureById(Long id) {
+   Session session = sessionFactory.openSession();
+    session.beginTransaction();
+    session.delete(findFixtureById(id));
+    session.getTransaction().commit();
+    session.close();
+
+  }
+
+  public List<Fixture> fetchAllFixtures() {
+
+    Session session = sessionFactory.openSession();
+    CriteriaBuilder builder = session.getCriteriaBuilder();
+    CriteriaQuery<Fixture> criteria = builder.createQuery(Fixture.class);
+    criteria.from(Fixture.class);
+    List<Fixture> fixtures = session.createQuery(criteria).getResultList();
+    session.close();
+
+    return fixtures;
+  }
+}

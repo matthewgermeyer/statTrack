@@ -4,14 +4,24 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 public class Fixture {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
   private List<Team> teams;
   private String homeTeamName;
   private String awayTeamName;
+
   private Team homeTeam;
   private Team awayTeam;
+  @Column
   private String venue;
+  @Column
   private String date;
 
   //constructors 2 : full(minus id) and empty
