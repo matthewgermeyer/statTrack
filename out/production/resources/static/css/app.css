@@ -1,0 +1,55 @@
+html {
+  background: url("../../images/nld-stylish.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.instructions {
+margin: auto;
+width: 25%;
+background-color:#681a1a;
+margin-top: 178px;
+text-align: center;
+}
+
+.transparent {
+  background:#7f7f7f;
+  background:rgba(0,0,0,0.5);
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+
+p { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; }
+
+.fix {
+    position: fixed;
+    bottom: 20px;
+    left: 33%;
+    margin-left: auto;
+}
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    width: 38%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
