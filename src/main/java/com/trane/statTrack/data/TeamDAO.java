@@ -10,5 +10,5 @@ public interface TeamDAO {
   Team findById(Long id);
   Long save(Team team);
   void update(Team team);
-  void delete(Long id);
+  void delete(Team team);
 }

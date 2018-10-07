@@ -45,9 +45,8 @@ public class TeamServiceImpl implements TeamService {
   }
 
   @Override
-  public void delete(Long id) {
-    teamDAO.delete(id);
-
-
+  public void delete(Team team) {
+    teamDAO.delete(team);
   }
+
 }

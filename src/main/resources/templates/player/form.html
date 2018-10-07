@@ -5,7 +5,7 @@
 <div th:replace="layout :: nav"></div>
 <div th:replace="layout :: searchbar"></div>
 <div th:replace="layout :: flash"></div>
-<h1> Players </h1>
+<h1> Player Add </h1>
 
 <form th:action="@{/players}" method="post" th:object="${player}">
     <input th:field="*{name}" type="text" placeholder="name" />

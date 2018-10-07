@@ -1,6 +1,7 @@
 package com.trane.statTrack.data;
 
 import com.trane.statTrack.model.Team;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,9 @@ public class TeamDAOImpl implements TeamDAO{
   public Team findById(Long id) {
     Session session = sessionFactory.openSession();
     Team team = session.get(Team.class, id);
+    if (team.getPlayers().size() > 0){
+      Hibernate.initialize(team.getPlayers());
+    }
     session.close();
     return team;
   }
@@ -40,10 +44,10 @@ public class TeamDAOImpl implements TeamDAO{
 
   }
 
-  public void delete(Long id) {
+  public void delete(Team team) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    session.delete(findById(id));
+    session.delete(findById(team.getId()));
     session.getTransaction().commit();
     session.close();
 

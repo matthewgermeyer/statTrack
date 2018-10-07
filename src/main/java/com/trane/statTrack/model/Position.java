@@ -4,8 +4,6 @@ public enum Position {
   GOALKEEPER,
   DEFENDER,
   MIDFIELDER,
-  FORWARD;
-
-  private String name;
+  FORWARD
 
 }

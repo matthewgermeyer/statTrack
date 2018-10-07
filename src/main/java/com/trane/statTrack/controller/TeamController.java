@@ -19,30 +19,43 @@ public class TeamController {
   @Autowired
   PlayerService playerService;
 
-
+  //all teams
   @RequestMapping("/teams")
   public String listTeams(Model model) {
+    //TODO: Move this later
+    Team spurs = teamService.generateSpursTeam();
+    Team arsenal = teamService.generateArsenalTeam();
+    teamService.save(spurs);
+    teamService.save(arsenal);
+
     List<Team> teams = teamService.findAll();
     model.addAttribute("teams", teams);
-    return "team/teams";
+    return "team/index";
   }
 
-  @RequestMapping("/team/{id}")
+  //team detail
+  @RequestMapping("/teams/{id}")
   public String team(@PathVariable Long id, Model model) {
     Team team = teamService.findById(id);
-    List<String> roster = team.getPlayerNames();
     model.addAttribute("team", team);
-    model.addAttribute("roster", roster);
-
-    return "team/team-detail";
+    return "team/detail";
   }
+
+  @RequestMapping("/teams/{id}/recruit")
+  public String addPlayerToTeam(@PathVariable Long id, Model model) {
+
+    Team team = teamService.findById(id);
+    return "player/form";
+  }
+
+
+
 
   @RequestMapping("/nld/tracker")
   public String trackerGet(ModelMap modelMap) {
     Team spurs = teamService.generateSpursTeam();
-    Team arsenal = teamService.generateArsenalTeam();
 
-    List<String> roster = spurs.getPlayerNames();
+    List<String> roster = spurs.getRoster();
     modelMap.addAttribute("team", spurs);
     modelMap.addAttribute("roster", roster);
     return "NLDtracker";

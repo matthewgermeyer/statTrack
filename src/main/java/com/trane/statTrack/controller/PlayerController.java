@@ -3,6 +3,7 @@ package com.trane.statTrack.controller;
 import com.trane.statTrack.model.Player;
 import com.trane.statTrack.model.Position;
 import com.trane.statTrack.service.PlayerService;
+import com.trane.statTrack.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,17 +20,20 @@ import javax.validation.Valid;
 public class PlayerController {
   @Autowired
   PlayerService playerService;
+  @Autowired
+  TeamService teamService;
 
   @RequestMapping("/players")
   public String players(Model model) {
-    List<Player> players = playerService.findAll();
-    model.addAttribute("players", players);
+
+    List<Player> playerCards = playerService.findAll();
+    model.addAttribute("cards", playerCards);
     return "player/players";
   }
 
   //form for adding new Player
   @RequestMapping("players/add")
-  public String formNewPlayer(Model model) {
+  public String formNewPlayer(Player player, Model model) {
     model.addAttribute("player", new Player());
     model.addAttribute("positions", Position.values());
     return "player/form";
@@ -39,10 +43,10 @@ public class PlayerController {
   @RequestMapping(value = "/players", method = RequestMethod.POST)
   public String addPlayer(@Valid Player player, BindingResult result) {
     if (result.hasErrors()) {
-      return "redirect/players/add";
+      return "redirect/player/players/add";
     }
     playerService.save(player);
-    return "redirect:/players";
+    return "redirect:player/players";
   }
 
 

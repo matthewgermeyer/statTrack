@@ -9,8 +9,10 @@ public interface TeamService {
   Team findById(Long id);
   void update(Team team);
   void save(Team team);
-  void delete(Long id);
+  void delete(Team team);
+
   Team generateSpursTeam();
   Team generateArsenalTeam();
+
 
 }

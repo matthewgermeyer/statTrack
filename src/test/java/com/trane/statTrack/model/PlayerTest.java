@@ -17,23 +17,18 @@ public class PlayerTest {
   @Before
   public void setUp() throws Exception {
     roster = Arrays.asList("t1", "t2");
-    players = Team.generatePlayers(roster);
+    players = Team.generatePlayersFromRoster(roster);
     testPlayer = new Player("testPlayer");
   }
 
   @Test
   public void generatePlayersFromRosterYieldsAListOfPlayerObjects() throws Exception {
-    List<Player> testPlayers = Team.generatePlayers(roster);
+    List<Player> testPlayers = Team.generatePlayersFromRoster(roster);
 
     assertEquals(testPlayers.get(0), new Player("t1"));
     assertNotNull("testPlayers should have 2 Player objects", testPlayers);
   }
 
-  @Test
-  public void statBookIsInitalizedInConstructor() throws Exception{
-
-    assertNotNull("statbook should not be null", testPlayer.getStatbook());
-  }
 
 
 

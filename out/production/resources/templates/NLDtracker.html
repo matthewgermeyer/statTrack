@@ -2,63 +2,55 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
-    <title> Derby Day! </title>
+    <meta description="viewport" content="width=device-width, initial-scale=1"/>
+    <link th:href="@{/css/app.css}" rel="stylesheet" />
+    <title>statTrack</title>
 </head>
 <body>
-<h1>Welcome to the North London Derby! </h1>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+
 <div class="container">
-    <h2>Spurs vs. Arsenal AND IT'S LIVE!!</h2>
-    <div class="container">
-        <ul>
-            <li th:each="name : ${roster}" th:text="${name}"></li>
-        </ul>
-    </div>
+    <h3>Welcome to the North London Derby!</h3>
 
     <div class="container">
         <h2 th:text="${instruction}"> Should not see this. </h2>
         <form action="/nld/tracker/update" method="post">
+
             <table>
+                <thead>
                 <tr>
-                    <th>Active</th>
                     <th>Name</th>
                     <th>Goals</th>
                     <th>Passes</th>
+                    <th>Assists</th>
                 </tr>
-
+                </thead>
+                <tbody>
                 <tr th:each="name: ${roster}">
-
-                    <td><input type="checkbox" name="active"/></td>
+                    <td> <input type="checkbox" name="active"/> </td>
                     <td th:text="${name}"></td>
-                    <td><button>Add Goal</button></td>
-                    <td> <button>Add Pass</button></td>
-
+                    <td>
+                        <button>Goal</button>
+                    </td>
+                    <td>
+                        <button>Pass</button>
+                    </td>
+                    <td>
+                        <button>Assist</button>
+                    </td>
                 </tr>
-
+                </tbody>
             </table>
+
+            <label for="active">Is Active</label>
+            <input type="checkbox" id="active" name="active"/>
             <button type="submit">Update Roster</button>
         </form>
     </div>
 
-    <div class="container">
-
-        <table>
-            <tr>
-
-                <th>Name</th>
-                <th>Goals</th>
-                <th>Passes</th>
-            </tr>
-
-            <tr th:each="name: ${starters}">
-                <td th:text="${name}"></td>
-                <td><button>Add Goal</button></td>
-                <td> <button>Add Pass</button></td>
-            </tr>
-        </table>
-
-    </div>
-
 </div>
-
+<div th:replace="layout :: scripts"></div>
 </body>
 </html>
