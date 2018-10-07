@@ -1,16 +1,22 @@
 package com.trane.statTrack.controller;
 
-import com.trane.statTrack.model.Player;
+import com.trane.statTrack.exc.TeamNotEmptyException;
 import com.trane.statTrack.model.Team;
 import com.trane.statTrack.service.PlayerService;
 import com.trane.statTrack.service.TeamService;
+import com.trane.statTrack.util.FlashMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
+import javax.validation.Valid;
 
 @Controller
 public class TeamController {
@@ -19,30 +25,152 @@ public class TeamController {
   @Autowired
   PlayerService playerService;
 
-
-
+  // All Teams
   @RequestMapping("/teams")
-  public String listTeams(ModelMap modelMap) {
+  public String listTeams(Model model) {
+    //TODO: Move this later
+    Team spurs = teamService.generateSpursTeam();
+    Team arsenal = teamService.generateArsenalTeam();
+    teamService.save(spurs);
+    teamService.save(arsenal);
+
     List<Team> teams = teamService.findAll();
-    modelMap.put("teams", teams);
-    return "teams";
+    model.addAttribute("teams", teams);
+    return "team/index";
   }
 
-  @RequestMapping("/team/{id}")
-  public String team(@PathVariable Long id, ModelMap modelMap) {
+  // Single Team
+  @RequestMapping("/teams/{id}")
+  public String team(@PathVariable Long id, Model model) {
     Team team = teamService.findById(id);
-    List<String> roster = team.getPlayerNames();
-    modelMap.put("team", team);
-    modelMap.put("roster", roster);
-
-    return "team";
+    model.addAttribute("team", team);
+    return "team/detail";
   }
 
-  @RequestMapping("/player/{id}")
-  public String player(@PathVariable Long id, ModelMap modelMap) {
-    Player player = playerService.findById(id);
-    modelMap.put("player", player);
-    return "player";
+  //Add Team - form
+  @RequestMapping("/teams/add")
+  public String formAddTeam(@Valid Model model) {
+
+    if (!model.containsAttribute("team")) {
+      model.addAttribute("team", new Team());
+    }
+
+    model.addAttribute("action", "team/teams");
+    model.addAttribute("heading", "New Category");
+    model.addAttribute("submit", "Add");
+
+    return "team/form";
+  }
+
+  //Edit form (Edit and Add use the same form)
+  @RequestMapping("/teams/{teamId}/edit")
+  public String formEditTeam(@PathVariable Long teamId, Model model) {
+    if (model.containsAttribute("team")) {
+      model.addAttribute("team", teamService.findById(teamId));
+    }
+
+    model.addAttribute("action", String.format("/teams/%s", teamId));
+    model.addAttribute("heading", "Edit Team");
+    model.addAttribute("submit", "Edit");
+
+    return "team/form";
+  }
+
+  //Add team (POST)
+  @RequestMapping(value = "/teams", method = RequestMethod.POST)
+  public String postAddTeam(@Valid Team team,
+                            Model model,
+                            RedirectAttributes redirectAttributes,
+                            BindingResult result) {
+
+    //errors in validation
+    if (result.hasErrors()) {
+      //TODO: Read up on flash and redirect attributes attributes.
+      // alert with flash message
+      redirectAttributes
+          .addFlashAttribute("org.springframework.validation.BindingResult.team", result);
+      //repopulate the redirect model
+      redirectAttributes.addFlashAttribute("team", team);
+      // redirect
+      return "redirect:/teams/add";
+    }
+    //validation successful -> we can persist
+    teamService.save(team);
+
+    //success flash message
+    redirectAttributes.addFlashAttribute("flash",
+        new FlashMessage("Team successfully added!", FlashMessage.Status.SUCCESS));
+
+    //redirect to teams.
+    return "redirect:/teams";
+  }
+
+  //Update team (POST)
+  @RequestMapping(value = "/teams/{teamId}", method = RequestMethod.POST)
+  public String formEditTeam(@Valid Team team,
+                             RedirectAttributes redirectAttributes,
+                             BindingResult result) {
+
+    //check validation for errors
+    if (result.hasErrors()) {
+      //errors exist -> warn the user with a flash message
+      redirectAttributes.addFlashAttribute("org.springframe.validation.BindingResult.team", result);
+      redirectAttributes.addFlashAttribute("team", team);
+      return String.format("redirect:/teams/%s/edit", team.getId());
+    }
+    // green path ->
+    // save the team
+    teamService.save(team);
+    //redirect attributes Team team, a flash message with success, result status
+    redirectAttributes.addFlashAttribute("flash",
+        new FlashMessage("Category successfully updated!", FlashMessage.Status.SUCCESS));
+    return "team/teams";
+  }
+
+
+  //Delete Team
+  @RequestMapping(value = "/teams/{teamId}/delete", method = RequestMethod.POST)
+  public String deleteTeam(@PathVariable Long teamId, RedirectAttributes redirectAttributes) {
+
+    Team team = teamService.findById(teamId);
+    if (team.getPlayers().size() > 0) {
+
+      redirectAttributes.addFlashAttribute("flash",
+          new FlashMessage("Only empty categories can be deleted.", FlashMessage.Status.FAILURE));
+    }
+
+    try {
+      teamService.delete(teamService.findById(teamId));
+    } catch (TeamNotEmptyException e) {
+      System.out.println(e.getMessage());
+      e.printStackTrace();
+    }
+
+    redirectAttributes
+        .addFlashAttribute("flash", new FlashMessage("Team deleted!", FlashMessage.Status.SUCCESS));
+    return String.format("redirect:/teams/%s/edit", teamId);
 
   }
+
+
+  //TODO: Complete or phase out
+  @RequestMapping("/teams/{id}/recruit")
+  public String addPlayerToTeam(@PathVariable Long id, Model model) {
+
+    Team team = teamService.findById(id);
+    return "player/form";
+  }
+
+  //TODO: Complete or phase out
+  @RequestMapping("/nld/tracker")
+  public String trackerGet(ModelMap modelMap) {
+    Team spurs = teamService.generateSpursTeam();
+
+    List<String> roster = spurs.getRoster();
+    modelMap.addAttribute("team", spurs);
+    modelMap.addAttribute("roster", roster);
+    return "NLDtracker";
+  }
+
+
 }

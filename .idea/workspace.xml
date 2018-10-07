@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bc147aa-7a8e-432a-abe9-22dc4f6369ea" name="Default Changelist" comment="">
+    <list default="true" id="29311e90-9fd3-43e1-939d-dd3fe1d464f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/exc/TeamNotEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/cardiff-city-fc-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/chelsea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/crystal-palace-fc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/derby-county-fc-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/everton-fc-hd-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/fulham-fc-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/huddersfield-town-fc-hd-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/hull-city-fc-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/leicester-city-fc-hd-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/liverpool.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/manchester-city-new-hd-logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/manchester-united.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/newcastle-united.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/norwich-city-fc-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/southampton-fc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/stoke-city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/swansea-city-afc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/tottenham-hotspur-fc-hd-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/watford-fc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/west-bromwich-albion-hd-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/west-ham-united-fc-hd-logo-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/eplbadges/wolverhampton-wanderers-fc-logo-png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
->>>>>>> master
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/team/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/team/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/statTrack.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/statTrack.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/arsenal-badge.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/arsenal-badge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/jan-held-back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/jan-held-back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/nld-fifa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/nld-fifa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/nld-official.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/nld-official.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/nld-styled.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/nld-styled.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/nld-stylish.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/nld-stylish.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/ramsey-eriksen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/ramsey-eriksen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/spurs-badge.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/spurs-badge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/stat-track-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/stat-track-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/theo-jan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/theo-jan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/toby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/nld/toby.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/NLD.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fixtures/NLD.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/NLDtracker.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fixtures/NLDtracker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fixtures/fixtures.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fixtures/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/player/player-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/player/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/player/players.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/player/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -26,6 +70,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -42,14 +89,25 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="statTrack" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="statTrack" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="statTrack" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="statTrack" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -62,179 +120,148 @@
     <session id="-936584701">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="gradle" value="3" />
-          <entry key="gradlew" value="1" />
-          <entry key="html" value="9" />
-          <entry key="java" value="83" />
-          <entry key="jpg" value="4" />
-          <entry key="png" value="3" />
+          <entry key="css" value="3" />
+          <entry key="gitignore" value="1" />
+          <entry key="gradle" value="1" />
+          <entry key="html" value="34" />
+          <entry key="java" value="171" />
+          <entry key="jpg" value="2" />
+          <entry key="js" value="1" />
+          <entry key="png" value="22" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Groovy" value="3" />
-          <entry key="HTML" value="9" />
-          <entry key="Image" value="7" />
-          <entry key="JAVA" value="83" />
+          <entry key="CSS" value="3" />
+          <entry key="Groovy" value="1" />
+          <entry key="HTML" value="34" />
+          <entry key="Image" value="24" />
+          <entry key="JAVA" value="171" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="730" />
-          <entry key="dummy" value="23" />
-          <entry key="gradle" value="20" />
-          <entry key="html" value="2469" />
-          <entry key="java" value="16931" />
+          <entry key="css" value="5" />
+          <entry key="gradle" value="37" />
+          <entry key="html" value="2141" />
+          <entry key="java" value="12239" />
+          <entry key="properties" value="86" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="730" />
-          <entry key="Groovy" value="20" />
-          <entry key="HTML" value="2469" />
-          <entry key="JAVA" value="16931" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="CSS" value="5" />
+          <entry key="Groovy" value="37" />
+          <entry key="HTML" value="2141" />
+          <entry key="JAVA" value="12239" />
+          <entry key="Properties" value="86" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="statTrack" />
-  </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
-    <leaf />
-=======
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Actions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/leicester-city-fc-hd-logo.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Detail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/hull-city-fc-logo-png.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
-                <element signature="e#2076#2077#0" expanded="true" />
-                <element signature="e#2126#2127#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
-                <element signature="method#equals#0;class#Team#0" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/huddersfield-town-fc-hd-logo-png.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Fixture.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3637">
-              <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/fulham-fc-logo-png.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2640">
-              <caret line="88" column="28" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/everton-fc-hd-logo-png.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/derby-county-fc-logo-png.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/crystal-palace-fc.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/chelsea.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Tracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/arsenal-badge.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/jan-held-back.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
->>>>>>> master
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Enum" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>roster</find>
-      <find>time</find>
-      <find>Thyme</find>
-      <find>Main</find>
-      <find>Gif</find>
-      <find>overlay</find>
-      <find>Fixture</find>
-      <find>FixtureServiceSimple</find>
-      <find>spurs</find>
-      <find>De</find>
-      <find>model</find>
-      <find>modelMap</find>
-      <find>Team</find>
-      <find>addAttribute</find>
+      <find>create table</find>
+      <find>insert</find>
+      <find>private</find>
+      <find>static</find>
+      <find>fix</find>
+      <find>player</find>
+      <find>team</find>
+      <find>fixture</find>
+      <find>css3</find>
+      <find>getRoster</find>
     </findStrings>
     <replaceStrings>
-      <replace>homeTeamName</replace>
       <replace>fixture</replace>
-      <replace>Fixture</replace>
-      <replace>Team</replace>
       <replace>team</replace>
-      <replace>FixtureServiceImpl</replace>
-      <replace>arsenal</replace>
-      <replace>modelMap</replace>
-      <replace>ModelMap</replace>
-      <replace>Player</replace>
-      <replace>player</replace>
-      <replace>put</replace>
+      <replace>Detail</replace>
+      <replace>detail</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/java/com/trane/statTrack/config</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -436,17 +463,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$USER_HOME$/IdeaProjects/Armory/armory" value="2998533232000" />
-        <entry key="$USER_HOME$/IdeaProjects/blaze/blazedemo" value="3006034442000" />
-        <entry key="$USER_HOME$/IdeaProjects/cheese-mvc" value="1496306770000" />
-        <entry key="$USER_HOME$/IdeaProjects/hello-spring" value="1496279034000" />
-<<<<<<< HEAD
-        <entry key="$PROJECT_DIR$" value="6153997940000" />
-=======
-        <entry key="$PROJECT_DIR$" value="6153832453000" />
->>>>>>> master
+        <entry key="$PROJECT_DIR$" value="6154302477000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4214671565" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2422440919" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3915409425" />
       </map>
@@ -640,8 +659,6 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$USER_HOME$/Downloads/treehouse-projects-spring-unit-test-weather-9d0bfb0" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../spring-unit-test-weather" value="PREVIEW" />
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
@@ -649,67 +666,67 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controller/GameRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Prompter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Detail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Tracker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Fixture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Actions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/FixtureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/FixtureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/Tracker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/northLondonDerby.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fixtures.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/app.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceSimple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceImpl/FixtureServiceSimple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceSimple.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/NLD.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/NLDtracker.html" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/TeamTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/FixtureTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Fixture.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Actions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/TemplateConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/FixtureTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/TeamTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/DetailTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/DetailDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/DetailDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/players.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/DetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/DetailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/team/team-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/player/player-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/NLD.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/team/teams.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/FlashMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/table.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/NLDtracker.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/app.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/player/form.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/DetailController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/teams.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/TeamTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/player/players.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/team.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/team/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/team/detail.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/exc/TeamNotEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="285" />
+    <option name="x" value="63" />
     <option name="y" value="23" />
-    <option name="width" value="1396" />
+    <option name="width" value="1455" />
     <option name="height" value="873" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -718,8 +735,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -751,9 +768,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
               <item name="statTrack" type="462c0819:PsiDirectoryNode" />
-=======
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statTrack" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -762,6 +785,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statTrack" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statTrack" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -770,7 +803,55 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> master
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="team" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -780,32 +861,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538700995630" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/MattyG/code/statTrack/src/main/java/com/trane/statTrack/controller/TeamController.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538899633376" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.trane.statTrack.model" />
-      <recent name="com.trane.statTrack.service.FixtureServiceImpl" />
-      <recent name="com.trane.statTrack" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.trane.statTrack.exc" />
+      <recent name="com.trane.statTrack.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="model" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.trane.statTrack.util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images/nld" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/fixtures" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/team" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/player" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/form" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -820,17 +897,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.statTrack [bootRun]">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.trane.statTrack.Application" />
       <module name="statTrack_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.trane.statTrack.*" />
@@ -841,8 +911,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="statTrack [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="All in statTrack_test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="statTrack_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -851,97 +941,22 @@
       <module name="statTrack_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DetailTest.detailTimestampsOnCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="statTrack_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trane.statTrack.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.trane.statTrack.model" />
-      <option name="MAIN_CLASS_NAME" value="com.trane.statTrack.model.DetailTest" />
-      <option name="METHOD_NAME" value="detailTimestampsOnCreation" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamTest.generateSpursTeamSetsAllFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="statTrack_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trane.statTrack.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.trane.statTrack.model" />
-      <option name="MAIN_CLASS_NAME" value="com.trane.statTrack.model.TeamTest" />
-      <option name="METHOD_NAME" value="generateSpursTeamSetsAllFields" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.trane.statTrack.model in statTrack_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="statTrack_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trane.statTrack.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.trane.statTrack.model" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TeamTest.generateSpursTeamSetsAllFields" />
-      <item itemvalue="JUnit.com.trane.statTrack.model in statTrack_test" />
-      <item itemvalue="JUnit.All in statTrack_test" />
-      <item itemvalue="JUnit.DetailTest.detailTimestampsOnCreation" />
       <item itemvalue="Application.Application" />
+      <item itemvalue="Gradle.statTrack [bootRun]" />
+      <item itemvalue="JUnit.All in statTrack_test" />
+      <item itemvalue="JUnit.All in statTrack_test (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.com.trane.statTrack.model in statTrack_test" />
-        <item itemvalue="JUnit.DetailTest.detailTimestampsOnCreation" />
+        <item itemvalue="Gradle.statTrack [bootRun]" />
+        <item itemvalue="JUnit.All in statTrack_test (1)" />
         <item itemvalue="JUnit.All in statTrack_test" />
-        <item itemvalue="JUnit.TeamTest.generateSpursTeamSetsAllFields" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -950,131 +965,89 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2bc147aa-7a8e-432a-abe9-22dc4f6369ea" name="Default Changelist" comment="" />
-      <created>1538431988810</created>
+      <changelist id="29311e90-9fd3-43e1-939d-dd3fe1d464f8" name="Default Changelist" comment="" />
+      <created>1538714003906</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1538431988810</updated>
+      <updated>1538714003906</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TeamTest_teamConstructorSimple - 2018.10.03 at 17h 25m 56s.xml">
-      <configuration name="TeamTest.teamConstructorSimple" configurationId="JUnit" />
+    <history-entry file="All_in_statTrack_test_(1) - 2018.10.06 at 13h 40m 07s.xml">
+      <configuration name="All in statTrack_test (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TeamTest - 2018.10.03 at 17h 29m 15s.xml">
-      <configuration name="TeamTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_longTeamConstructorInstantiatesAllFieldsButId - 2018.10.03 at 17h 31m 26s.xml">
-      <configuration name="TeamTest.longTeamConstructorInstantiatesAllFieldsButId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_generatePlayersFromRosterYieldsAListOfPlayerObjects - 2018.10.03 at 17h 39m 25s.xml">
-      <configuration name="TeamTest.generatePlayersFromRosterYieldsAListOfPlayerObjects" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest_statBookIsInitalizedInConstructor - 2018.10.03 at 18h 02m 36s.xml">
-      <configuration name="PlayerTest.statBookIsInitalizedInConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeamTest_generateSpursTeamSetsAllFields - 2018.10.03 at 18h 11m 12s.xml">
-      <configuration name="TeamTest.generateSpursTeamSetsAllFields" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_trane_statTrack_model_in_statTrack_test - 2018.10.03 at 18h 13m 33s.xml">
-      <configuration name="com.trane.statTrack.model in statTrack_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_statTrack_test - 2018.10.03 at 18h 35m 56s.xml">
-      <configuration name="All in statTrack_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_trane_statTrack_model_in_statTrack_test - 2018.10.03 at 18h 45m 17s.xml">
-      <configuration name="com.trane.statTrack.model in statTrack_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DetailTest_detailTimestampsOnCreation - 2018.10.03 at 18h 54m 28s.xml">
-      <configuration name="DetailTest.detailTimestampsOnCreation" configurationId="JUnit" />
+    <history-entry file="All_in_statTrack_test_(1) - 2018.10.06 at 13h 50m 26s.xml">
+      <configuration name="All in statTrack_test (1)" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="449" y="164" width="1396" height="873" extended-state="0" />
+    <frame x="63" y="23" width="1455" height="873" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896908" visible="true" weight="0.20384048" />
-      <window_info id="Terminal" order="1" sideWeight="0.5010309" side_tool="true" weight="0.20384048" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" weight="0.3297568" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40076825" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3790013" />
-=======
-    <frame x="3" y="23" width="1440" height="867" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5637681" visible="true" weight="0.20594479" />
+      <window_info id="Structure" order="1" sideWeight="0.43704775" side_tool="true" weight="0.2515611" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" weight="0.3297568" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3290653" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35612902" />
->>>>>>> master
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32522407" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29577464" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.3290653" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.20102432" />
-=======
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32846716" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3277849" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3290653" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.20120482" />
->>>>>>> master
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.32846716" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Gradle" order="5" weight="0.3293944" />
-=======
-      <window_info anchor="right" id="Gradle" order="5" weight="0.21316166" />
->>>>>>> master
+      <window_info anchor="right" id="Gradle" order="5" weight="0.1816056" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42909896" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5637681" visible="true" weight="0.23312883" />
+      <window_info id="Structure" order="1" sideWeight="0.43704775" side_tool="true" weight="0.2515611" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" weight="0.3297568" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40076825" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3790013" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32522407" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294271" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3290653" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.20102432" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3290653" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.47887325" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32846716" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3277849" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32846716" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.0" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.1816056" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
@@ -1083,468 +1056,337 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java</url>
-          <line>185</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gradlew">
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759" />
-      </provider>
-=======
-      <provider selected="true" editor-type-id="text-editor" />
->>>>>>> master
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Position.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prompter.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/text/Annotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Actions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Detail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="494">
+          <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#save#0;class#FixtureServiceImpl#0" />
+            <element signature="method#delete#0;class#FixtureServiceImpl#0" />
           </folding>
         </state>
       </provider>
     </entry>
->>>>>>> master
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="853" selection-start-line="853" selection-end-line="853" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="1914" selection-start-line="1914" selection-end-line="1914" />
-          <folding>
-            <element signature="e#81177#81178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="2939" selection-start-line="2939" selection-end-line="2939" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="830" selection-start-line="830" selection-end-line="830" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/GameRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Prompter.java" />
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/icons/favorite.png" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/arsenal-badge.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/spurs-badge.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixtures.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld-official.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/jan-held-back.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld-styled.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld-stylish.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="88" column="28" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-          </folding>
->>>>>>> master
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/Tracker.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/NLD.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="30">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Actions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/FixtureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+        <state relative-caret-position="300">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="750">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/TeamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="-1173">
+          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/DetailTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="378">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="method#generateArsenalTeam#0;class#TeamServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-659">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="method#equals#0;class#Player#0" />
+            <element signature="method#toString#0;class#Player#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-282">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findById#0;class#PlayerDAOImpl#0" />
+            <element signature="method#update#0;class#PlayerDAOImpl#0" />
+            <element signature="method#delete#0;class#PlayerDAOImpl#0" />
+            <element signature="method#findAll#0;class#PlayerDAOImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-=======
-        <state relative-caret-position="395">
-          <caret line="51" column="91" selection-start-line="51" selection-start-column="91" selection-end-line="51" selection-end-column="91" />
->>>>>>> master
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="30">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="224">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#TeamDAOImpl#0" />
+            <element signature="method#save#0;class#TeamDAOImpl#0" />
+            <element signature="method#delete#0;class#TeamDAOImpl#0" />
+            <element signature="method#findAll#0;class#TeamDAOImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/FixtureDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="28" lean-forward="true" selection-end-line="13" />
+        <state relative-caret-position="334">
+          <caret line="29" column="112" lean-forward="true" selection-start-line="29" selection-start-column="112" selection-end-line="29" selection-end-column="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/NLDtracker.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="59" lean-forward="true" selection-end-line="63" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.14.RELEASE/63fd73134126b6ae088666fb720f5437bcb39cfa/spring-context-4.3.14.RELEASE-sources.jar!/org/springframework/ui/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+        <state relative-caret-position="341">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/exc/TeamNotEmptyException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/teams.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="10" column="42" lean-forward="true" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="43" column="35" lean-forward="true" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3510">
-          <caret line="184" column="66" selection-start-line="184" selection-start-column="66" selection-end-line="184" selection-end-column="66" />
+        <state relative-caret-position="654">
+          <caret line="167" column="43" selection-start-line="167" selection-start-column="43" selection-end-line="167" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Team#1;class#Team#0" />
             <element signature="method#equals#0;class#Team#0" />
             <element signature="method#toString#0;class#Team#0" />
-            <element signature="method#rosterString#0;class#Team#0" />
             <element signature="method#generateArsenalTeam#0;class#Team#0" />
-            <element signature="method#generatePlayers#0;class#Team#0" />
-=======
-        <state relative-caret-position="360">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2076#2077#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="method#equals#0;class#Team#0" />
->>>>>>> master
+            <element signature="method#generatePlayersFromRoster#0;class#Team#0" />
+            <element signature="method#getRoster#0;class#Team#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="141">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-=======
-        <state relative-caret-position="3637">
-          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+        <state relative-caret-position="-196">
+          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#listTeams#0;class#TeamController#0" />
+            <element signature="method#team#0;class#TeamController#0" />
+            <element signature="method#formAddTeam#0;class#TeamController#0" />
+            <element signature="method#formEditTeam#0;class#TeamController#0" />
+            <element signature="method#postAddTeam#0;class#TeamController#0" />
+            <element signature="method#formEditTeam#1;class#TeamController#0" />
+            <element signature="method#deleteTeam#0;class#TeamController#0" />
+            <element signature="method#addPlayerToTeam#0;class#TeamController#0" />
+            <element signature="method#trackerGet#0;class#TeamController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Tracker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/DetailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
->>>>>>> master
+        <state relative-caret-position="150">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>statTrack</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/player/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/player/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#formNewPlayer#0;class#PlayerController#0" />
+            <element signature="method#formEditPlayer#0;class#PlayerController#0" />
+            <element signature="method#postAddPlayer#0;class#PlayerController#0" />
+            <element signature="method#postPlayerUpdate#0;class#PlayerController#0" />
+            <element signature="method#PostDeletePlayer#0;class#PlayerController#0" />
+            <element signature="method#searchResults#0;class#PlayerController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixtures/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fixtures/NLDtracker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2393">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+          <folding>
+            <element signature="method#toString#0;class#Fixture#0" />
+            <element signature="method#equals#0;class#Fixture#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/tottenham-hotspur-fc-hd-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/watford-fc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/nld-official.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/west-ham-united-fc-hd-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/stoke-city.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/southampton-fc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/norwich-city-fc-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/newcastle-united.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/manchester-united.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/manchester-city-new-hd-logo1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/liverpool.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/leicester-city-fc-hd-logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/hull-city-fc-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/huddersfield-town-fc-hd-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/fulham-fc-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/everton-fc-hd-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/derby-county-fc-logo-png.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/crystal-palace-fc.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/chelsea.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/jan-held-back.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/arsenal-badge.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
   </component>
 </project>

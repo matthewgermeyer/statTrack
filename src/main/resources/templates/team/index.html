@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head('teams')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+<!-- end boilerplate -->
+
+<div class="container">
+    <div class="row">
+        <div class="col s9">
+            <h2 class="center">Teams</h2>
+        </div>
+        <div class="col s3">
+            <a class="right add" href="/teams/add">+</a>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+        <div th:each="team : ${teams}" class="col s12 l4">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">
+                        <a class="name" th:href="@{|/teams/${team.id}|}" th:text="${team.teamName}">Team Name</a>
+                        <a class="edit" th:href="@{|/teams/${team.id}/edit|}"><i
+                                class="hide-on-med-and-down material-icons">more_horiz</i><i
+                                class="hide-on-large-only medium material-icons">more_horiz</i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

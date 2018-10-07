@@ -3,10 +3,20 @@ package com.trane.statTrack.model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Detail {
-
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  Long id;
+  @Column
   String timeStamp;
+  @Column
   String description;
 
   //Constructors 2
@@ -15,10 +25,18 @@ public class Detail {
     this.description = description;
   }
 
-  public Detail() {}
-
+  public Detail() {
+  }
 
   //getters and setters
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
   public String getTimeStamp() {
     return timeStamp;
   }
@@ -56,7 +74,7 @@ public class Detail {
 
 
   public static String timeStamp() {
-  String time = new SimpleDateFormat("HH.mm.ss").format(new Date());
-  return time;
-}
+    String time = new SimpleDateFormat("HH.mm.ss").format(new Date());
+    return time;
+  }
 }

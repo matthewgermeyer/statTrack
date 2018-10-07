@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head('form')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+<h1> Player Add </h1>
+
+<form th:action="@{/players}" method="post" th:object="${player}">
+    <input th:field="*{name}" type="text" placeholder="name" />
+    <select th:field="*{position}" class="cs-select cs-skin-border">
+        <option value="" disabled="disabled">Position</option>
+        <option th:each="position : ${positions}" th:value="${position.name}" th:text="${position.name}"></option>
+    </select>
+    <button type="submit" class="button">Add</button>
+</form>
+
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>
