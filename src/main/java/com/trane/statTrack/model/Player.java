@@ -1,26 +1,45 @@
 package com.trane.statTrack.model;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+@Entity
 public class Player {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  @Column
+  @NotNull
+  @Size(min=4)
   private String name;
-  private Map<Actions, Detail> statbook;
+  @ManyToOne
+  @NotNull
+  private Team team;
 
-  //constructors
+  //default constructor for JPA
   public Player() {
   }
 
   public Player(String name) {
-
     this.name = name;
-    this.statbook = new HashMap<>();
-
   }
 
   //getters and setters
+
+  public Team getTeam() {
+    return team;
+  }
+
+  public void setTeam(Team team) {
+    this.team = team;
+  }
 
   public Long getId() {
     return id;
@@ -28,14 +47,6 @@ public class Player {
 
   public void setId(Long id) {
     this.id = id;
-  }
-
-  public Map<Actions, Detail> getStatbook() {
-    return statbook;
-  }
-
-  public void setStatbook(Map<Actions, Detail> statbook) {
-    this.statbook = statbook;
   }
 
   public String getName() {
@@ -56,39 +67,23 @@ public class Player {
       return false;
     }
     Player player = (Player) o;
-    return Objects.equals(name, player.name);
+    return Objects.equals(id, player.id) &&
+        Objects.equals(name, player.name) &&
+        Objects.equals(team, player.team);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(id, name, team);
   }
 
   @Override
   public String toString() {
-    return String.format("%s%n", name);
+    return "Player{" +
+        "id=" + id +
+        ", name='" + name + '\'' +
+        '}';
   }
-
-  //Statbook methods
-  //TODO: write method to jot into statbook / write test cases
-  public void jot(Actions toAdd, Detail detail) {
-    if (statbook != null) {
-      statbook.put(toAdd, detail);
-      System.out.printf(
-          "%n ------> Added Action : %s%n " +
-              "Description: %s%n",
-          toAdd.toString(),
-          detail.toString());
-      setStatbook(statbook);
-
-    }
-    Map<Actions, Detail> statbook = new HashMap<>();
-    statbook.put(toAdd, detail);
-    setStatbook(statbook);
-
-  }
-
-
 }
 
 

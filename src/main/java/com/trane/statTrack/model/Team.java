@@ -4,15 +4,30 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+@Entity
 public class Team {
-  //counter for players instantiated
-  private static Long playerCounter = 1L;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  @Column
+  @NotNull
+  @Size(min = 4, max = 30)
   private String teamName;
+  @Column
   private String managerName;
+  @Column
   private String homeGround;
-  List<String> playerNames;
+  @OneToMany(mappedBy = "team", fetch = FetchType.EAGER)
   List<Player> players;
 
   private static final String SPURS_NAME = "Tottenham Hotspur FC";
@@ -58,11 +73,9 @@ public class Team {
   //Constructors (3) : short, long, empty
   public Team(String teamName) {
     this.teamName = teamName;
-    this.managerName= "not set";
-    this.homeGround= "not set";
-    this.playerNames = new ArrayList<>();
+    this.managerName = "not set";
+    this.homeGround = "not set";
     this.players = new ArrayList<>();
-
   }
 
   public Team(String teamName, String managerName, String homeGround,
@@ -70,11 +83,11 @@ public class Team {
     this.teamName = teamName;
     this.managerName = managerName;
     this.homeGround = homeGround;
-    this.playerNames = playerNames;
-    this.players = generatePlayers(playerNames);
+    this.players = generatePlayersFromRoster(playerNames, this);
   }
 
-  public Team() {}
+  public Team() {
+  }
 
   //getters and setters
   public String getTeamName() {
@@ -105,14 +118,6 @@ public class Team {
     this.homeGround = homeGround;
   }
 
-  public List<String> getPlayerNames() {
-    return playerNames;
-  }
-
-  public void setPlayerNames(List<String> playerNames) {
-    this.playerNames = playerNames;
-  }
-
   public Long getId() {
     return id;
   }
@@ -131,68 +136,63 @@ public class Team {
       return false;
     }
     Team team = (Team) o;
-    return Objects.equals(teamName, team.teamName) &&
+    return Objects.equals(id, team.id) &&
+        Objects.equals(teamName, team.teamName) &&
         Objects.equals(managerName, team.managerName) &&
         Objects.equals(homeGround, team.homeGround) &&
-        Objects.equals(playerNames, team.playerNames);
+        Objects.equals(players, team.players);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(teamName, managerName, homeGround, playerNames);
+    return Objects.hash(id, teamName, managerName, homeGround, players);
   }
 
   @Override
   public String toString() {
-    String rosterString = rosterString(playerNames);
-    String result = String.format(
-        " Team: %s%n " +
-            "Manager: %s%n Venue: %s%n%n " +
-            "Roster: %n%s",
-        teamName,
-        managerName,
-        homeGround,
-        rosterString);
-    return result.replace("[", "").replace("]", "").replace(",","");
-
-  }
-
-  private String rosterString(List<String> playerNames) {
-    String result = "";
-    if (playerNames != null) {
-      for (String name : playerNames) {
-        result += name + String.format("%n");
-      }
-    }
-    return result;
+    return "Team{" +
+        "id=" + id +
+        ", teamName='" + teamName + '\'' +
+        ", managerName='" + managerName + '\'' +
+        ", homeGround='" + homeGround + '\'' +
+        ", players=" + players +
+        '}';
   }
 
   public static Team generateSpursTeam() {
     Team spurs = new Team(SPURS_NAME, SPURS_MANAGER, SPURS_GROUND, SPURS_PLAYERS_NAMES);
-    spurs.setPlayers(generatePlayers(SPURS_PLAYERS_NAMES));
-    System.out.printf("%n%n---> Generating Spurs%n%s %n%n", spurs.toString());
+    spurs.setPlayers(generatePlayersFromRoster(SPURS_PLAYERS_NAMES, spurs));
     return spurs;
   }
 
   public static Team generateArsenalTeam() {
     Team arsenal = new Team(ARSENAL_NAME, ARSENAL_MANAGER, ARSENAL_GROUND, ARSENAL_PLAYERS_NAMES);
-    arsenal.setPlayers(generatePlayers(ARSENAL_PLAYERS_NAMES));
-    System.out.printf("%n%n---> Generating Arsenal%n%s %n%n", arsenal.toString());
-
+    arsenal.setPlayers(generatePlayersFromRoster(ARSENAL_PLAYERS_NAMES, arsenal));
     return arsenal;
   }
 
-  public static List<Player> generatePlayers(List<String> roster) {
+  //returns a list of Player objects from a roster, adds to team.
+  public static List<Player> generatePlayersFromRoster(
+      List<String> roster, Team team) {
     ArrayList<Player> players = new ArrayList<>();
-    if (roster != null) {
+
+    if (roster.size() > 0) {
       for (String name : roster) {
-        Player p = new Player(name);
-        p.setId(playerCounter);
-        playerCounter++;
-        players.add(p);
+        Player newPlayer = new Player(name);
+        newPlayer.setTeam(team);
+        players.add(newPlayer);
       }
     }
     return players;
+  }
+
+  //returns a list of player names for the team
+  public List<String> getRoster() {
+    List<String> roster = new ArrayList<>();
+    for (Player p : this.getPlayers()) {
+      roster.add(p.getName());
+    }
+    return roster;
   }
 
 }//class

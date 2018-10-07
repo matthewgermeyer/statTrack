@@ -30,7 +30,7 @@ public class TeamTest {
     assertEquals("not set", testTeamShort.getManagerName());
     assertEquals("not set", testTeamShort.getHomeGround());
     assertNotNull("Players should be instantiated", testTeamShort.getPlayers());
-    assertNotNull("Roster should be instantiated ", testTeamShort.getPlayerNames());
+    assertNotNull("Roster should be instantiated ", testTeamShort.getRoster());
 
   }
 
@@ -40,9 +40,9 @@ public class TeamTest {
     assertEquals("testTeamLong", testTeamLong.getTeamName());
     assertEquals("testTeamManager", testTeamLong.getManagerName());
     assertEquals("testTeamHome", testTeamLong.getHomeGround());
-    assertEquals(roster, testTeamLong.getPlayerNames());
+    assertEquals(roster, testTeamLong.getRoster());
     assertNotNull("Players should be instantiated", testTeamShort.getPlayers());
-    assertNotNull("Roster should be instantiated ", testTeamShort.getPlayerNames());
+    assertNotNull("Roster should be instantiated ", testTeamShort.getRoster());
   }
 
   //generateSpurs Tests
@@ -53,7 +53,7 @@ public class TeamTest {
     assertEquals("Tottenham Hotspur FC",spurs.getTeamName());
     assertEquals("Mauricio Pochetino",spurs.getManagerName());
     assertEquals("White Hart Lane",spurs.getHomeGround());
-    assertNotNull("roster should not be Null!", spurs.getPlayerNames());
+    assertNotNull("roster should not be Null!", spurs.getRoster());
     assertNotNull("players should not be Null!", spurs.getPlayers());
 
   }
@@ -65,7 +65,7 @@ public class TeamTest {
     assertEquals("Arsenal FC",arsenal.getTeamName());
     assertEquals("Unai Emergy",arsenal.getManagerName());
     assertEquals("Emirates Stadium",arsenal.getHomeGround());
-    assertNotNull("roster should not be Null!", arsenal.getPlayerNames());
+    assertNotNull("roster should not be Null!", arsenal.getRoster());
     assertNotNull("players should not be Null!", arsenal.getPlayers());
 
   }
