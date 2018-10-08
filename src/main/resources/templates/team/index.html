@@ -22,9 +22,8 @@
         <div class="row">
             <div th:each="team : ${teams}" class="col s12 l4">
                 <a th:href="@{|/teams/${team.id}|}"
-                   th:text="${team.teamName}" class="actions">
+                   th:text="${team.teamName}" class="actions"></a>
 
-                </a>
             </div>
         </div>
     </div>

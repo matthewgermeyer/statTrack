@@ -8,8 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name="Detail")
+@Entity
+@Table(name="detail")
 public class Detail {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

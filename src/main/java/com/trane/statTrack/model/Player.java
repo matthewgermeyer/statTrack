@@ -1,7 +1,6 @@
 package com.trane.statTrack.model;
 
 import java.util.Objects;
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,27 +8,26 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-@Entity(name="Player")
+@Entity
+@Table(name="player")
 public class Player {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="id", updatable = false, nullable = false)
   private Long id;
 
-  @Column
   @NotNull
-  @Size(min=4, max=30)
+  @Size(min = 4, max = 30)
   private String name;
 
-  @ManyToOne(cascade = CascadeType.ALL)
-  @JoinColumn(name = "team_id")
+  @NotNull
+  @ManyToOne
+  @JoinColumn(name = "fk_team")
   private Team team;
-
-  @Pattern(regexp = "#[0-9a-fA-F]{6}")
-  private String colorCode;
 
   @NotNull
   private String position;
@@ -44,6 +42,8 @@ public class Player {
   }
 
   //getters and setters
+
+
 
 
   public Team getTeam() {
@@ -68,14 +68,6 @@ public class Player {
 
   public void setName(String name) {
     this.name = name;
-  }
-
-  public String getColorCode() {
-    return colorCode;
-  }
-
-  public void setColorCode(String colorCode) {
-    this.colorCode = colorCode;
   }
 
   public String getPosition() {
@@ -108,13 +100,13 @@ public class Player {
 
   @Override
   public String toString() {
-    return "Player{" +
-        "id=" + id +
-        ", name='" + name + '\'' +
-        ", team=" + team +
-        ", colorCode='" + colorCode + '\'' +
-        ", position='" + position + '\'' +
-        '}';
+    final StringBuilder sb = new StringBuilder("Player: ");
+    sb.append("id=").append(id);
+    sb.append(", name='").append(name).append('\'');
+    sb.append(", team=").append(team);
+    sb.append(", position='").append(position).append('\'');
+    sb.append('}');
+    return sb.toString();
   }
 }
 

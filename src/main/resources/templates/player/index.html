@@ -7,7 +7,6 @@
 <div th:replace="layout :: flash"></div>
 <!-- end boilerplate -->
 
-
 <div class="container">
     <div class="row">
         <div class="col s9">
@@ -22,9 +21,9 @@
 
     <div class="row">
         <div class="col s12 card" th:each="player : ${players}">
-            <p th:text="${player.name}"></p>
-            <p th:text="${player.position}"></p>
-            <p th:text="${player.team.teamName}"></p>
+            <a th:href="@{|/teams/${team.id}|}"> <span th:text="${player.name}"></span><span> | </span>
+            <span th:text="${player.position}"></span><span> | </span>
+            <span th:text="${player.team.teamName}"></span></a>
         </div>
     </div>
 </div>

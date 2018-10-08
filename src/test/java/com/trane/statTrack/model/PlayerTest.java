@@ -24,6 +24,7 @@ public class PlayerTest {
   @Test
   public void generatePlayersFromRosterYieldsAListOfPlayerObjects() throws Exception {
     List<Player> testPlayers = Team.generatePlayersFromRoster(roster);
+        generatePlayersFromRoster(roster);
 
     assertEquals(testPlayers.get(0), new Player("t1"));
     assertNotNull("testPlayers should have 2 Player objects", testPlayers);

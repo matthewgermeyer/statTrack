@@ -37,7 +37,7 @@ public class TeamDAOImpl implements TeamDAO{
   public void save(Team team) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    session.saveOrUpdate(team);
+    session.save(team);
     session.getTransaction().commit();
     session.close();
 

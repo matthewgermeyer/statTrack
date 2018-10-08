@@ -85,9 +85,10 @@ public class PlayerController {
       redirectAttributes
           .addFlashAttribute("org.springframework.validation.BindingResult.team", result);
       redirectAttributes.addFlashAttribute("player", player);
-      System.out.printf("%n%n========%s=======", "should not see this...");
 
-      //redirect
+      System.out.printf("%n%n========%s=======", "should not see this...");
+      System.out.println(player.toString());
+      System.out.println(result.toString());
       return "redirect:/players/add";
     }
     System.out.printf("%n%n========%s=======", player.toString());

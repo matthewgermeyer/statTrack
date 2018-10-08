@@ -10,12 +10,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
-@Entity(name = "Team")
+@Entity
+@Table(name = "team")
 public class Team {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="id", updatable = false, nullable = false)
   private Long id;
   @Column
   @Size(min = 4, max = 30)
@@ -24,10 +27,8 @@ public class Team {
   private String managerName;
   @Column
   private String homeGround;
-  @OneToMany(
-      mappedBy = "team"
-//      cascade = CascadeType.ALL
-  )
+
+  @OneToMany(mappedBy = "team")
   List<Player> players;
 
   private static final String SPURS_NAME = "Tottenham Hotspur FC";
@@ -147,6 +148,7 @@ public class Team {
         Objects.equals(players, team.players);
   }
 
+
   @Override
   public int hashCode() {
     return Objects.hash(id, teamName, managerName, homeGround, players);
@@ -199,14 +201,11 @@ public class Team {
     return roster;
   }
 
-  public void addPlayer(Player player) {
-    players.add(player);
+  //Helper method for hibernate.
+  public void signPlayer(Player player) {
+    this.players.add(player);
     player.setTeam(this);
-  }
 
-  public void removePlayer(Player player) {
-    players.remove(player);
-    player.setTeam(null);
   }
 
 }//class
