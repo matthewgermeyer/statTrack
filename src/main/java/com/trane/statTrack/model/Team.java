@@ -23,9 +23,9 @@ public class Team {
   @Column
   @Size(min = 4, max = 30)
   private String teamName;
-  @Column
+
   private String managerName;
-  @Column
+
   private String homeGround;
 
   @OneToMany(mappedBy = "team")

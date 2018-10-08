@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,17 +18,17 @@ public class Fixture {
   private Long id;
   @Transient
   private List<Team> teams;
-  @Column
+
   private String homeTeamName;
-  @Column
+
   private String awayTeamName;
   @Transient
   private Team homeTeam;
   @Transient
   private Team awayTeam;
-  @Column
+
   private String venue;
-  @Column
+
   private String date;
 
   //constructors 2 : full(minus id) and empty
