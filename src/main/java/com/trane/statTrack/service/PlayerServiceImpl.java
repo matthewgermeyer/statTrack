@@ -25,8 +25,8 @@ public class PlayerServiceImpl implements PlayerService {
   }
 
   @Override
-  public Long save(Player player) {
-    return playerDAO.save(player);
+  public void save(Player player) {
+    playerDAO.save(player);
   }
 
   @Override

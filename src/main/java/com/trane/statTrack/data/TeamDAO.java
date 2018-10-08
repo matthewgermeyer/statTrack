@@ -8,7 +8,7 @@ public interface TeamDAO {
 
   List<Team> findAll();
   Team findById(Long id);
-  Long save(Team team);
+  void save(Team team);
   void update(Team team);
   void delete(Team team);
 }

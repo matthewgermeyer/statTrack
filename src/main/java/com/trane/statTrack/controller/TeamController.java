@@ -25,14 +25,19 @@ public class TeamController {
   @Autowired
   PlayerService playerService;
 
+  @RequestMapping("/")
+  public String index() {
+    return "redirect:/teams";
+  }
+
   // All Teams
   @RequestMapping("/teams")
   public String listTeams(Model model) {
     //TODO: Move this later
-    Team spurs = teamService.generateSpursTeam();
-    Team arsenal = teamService.generateArsenalTeam();
-    teamService.save(spurs);
-    teamService.save(arsenal);
+//    Team spurs = teamService.generateSpursTeam();
+//    Team arsenal = teamService.generateArsenalTeam();
+//    teamService.save(spurs);
+//    teamService.save(arsenal);
 
     List<Team> teams = teamService.findAll();
     model.addAttribute("teams", teams);
@@ -45,21 +50,6 @@ public class TeamController {
     Team team = teamService.findById(id);
     model.addAttribute("team", team);
     return "team/detail";
-  }
-
-  //Add Team - form
-  @RequestMapping("/teams/add")
-  public String formAddTeam(@Valid Model model) {
-
-    if (!model.containsAttribute("team")) {
-      model.addAttribute("team", new Team());
-    }
-
-    model.addAttribute("action", "team/teams");
-    model.addAttribute("heading", "New Category");
-    model.addAttribute("submit", "Add");
-
-    return "team/form";
   }
 
   //Edit form (Edit and Add use the same form)
@@ -76,32 +66,39 @@ public class TeamController {
     return "team/form";
   }
 
+  //Add Team - form
+  @RequestMapping("teams/add")
+  public String addTeam(Model model) {
+
+    if (!model.containsAttribute("team")) {
+      model.addAttribute("team", new Team());
+    }
+
+    model.addAttribute("action", "/teams");
+    model.addAttribute("heading", "New Team");
+    model.addAttribute("submit", "Add");
+
+    return "team/form";
+  }
+
   //Add team (POST)
   @RequestMapping(value = "/teams", method = RequestMethod.POST)
-  public String postAddTeam(@Valid Team team,
-                            Model model,
-                            RedirectAttributes redirectAttributes,
-                            BindingResult result) {
+  public String addTeam(@Valid Team team,
+                        BindingResult result,
+                        RedirectAttributes redirectAttributes) {
 
-    //errors in validation
     if (result.hasErrors()) {
-      //TODO: Read up on flash and redirect attributes attributes.
-      // alert with flash message
       redirectAttributes
           .addFlashAttribute("org.springframework.validation.BindingResult.team", result);
-      //repopulate the redirect model
       redirectAttributes.addFlashAttribute("team", team);
-      // redirect
+
       return "redirect:/teams/add";
     }
-    //validation successful -> we can persist
     teamService.save(team);
 
-    //success flash message
-    redirectAttributes.addFlashAttribute("flash",
-        new FlashMessage("Team successfully added!", FlashMessage.Status.SUCCESS));
+    redirectAttributes.addFlashAttribute("flash", new FlashMessage("Team added!",
+        FlashMessage.Status.SUCCESS));
 
-    //redirect to teams.
     return "redirect:/teams";
   }
 

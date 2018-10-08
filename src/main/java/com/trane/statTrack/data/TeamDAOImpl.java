@@ -34,13 +34,12 @@ public class TeamDAOImpl implements TeamDAO{
     session.close();
   }
 
-  public Long save(Team team) {
+  public void save(Team team) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    Long id = (Long)session.save(team);
+    session.saveOrUpdate(team);
     session.getTransaction().commit();
     session.close();
-    return id;
 
   }
 

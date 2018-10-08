@@ -31,13 +31,13 @@ public class PlayerController {
   @RequestMapping("/players")
   public String players(Model model) {
 
-    List<Player> playerCards = playerService.findAll();
-    model.addAttribute("cards", playerCards);
+    List<Player> players = playerService.findAll();
+    model.addAttribute("players", players);
     return "player/index";
   }
 
   //Single Player
-  @RequestMapping("/player/{id}")
+  @RequestMapping("/players/{id}")
   public String playerDetail(@PathVariable Long id, ModelMap modelMap) {
     Player player = playerService.findById(id);
     modelMap.put("player", player);
@@ -47,8 +47,14 @@ public class PlayerController {
   //form for adding new Player
   @RequestMapping("players/add")
   public String formNewPlayer(Player player, Model model) {
-    model.addAttribute("player", new Player());
+    if (!model.containsAttribute("player")) {
+      model.addAttribute("player", new Player());
+    }
+    model.addAttribute("heading", "New player");
+    model.addAttribute("submit", "Add");
+    model.addAttribute("action", "/players");
     model.addAttribute("positions", Position.values());
+    model.addAttribute("teams", teamService.findAll());
     return "player/form";
   }
 
@@ -72,26 +78,25 @@ public class PlayerController {
   //post new player
   @RequestMapping(value = "/players", method = RequestMethod.POST)
   public String postAddPlayer(@Valid Player player,
-                              RedirectAttributes redirectAttributes,
-                              BindingResult result) {
+                              BindingResult result,
+                              RedirectAttributes redirectAttributes) {
 
     if (result.hasErrors()) {
-      //if it does have errors craft a failure flash message
       redirectAttributes
-          .addFlashAttribute("org.springframework.validation.BindingResult.player", result);
-      //add redirect attribute for flash message and the player object.
+          .addFlashAttribute("org.springframework.validation.BindingResult.team", result);
       redirectAttributes.addFlashAttribute("player", player);
-      //redirect
-      return String.format("redirect:/players/%s/edit", player.getId());
+      System.out.printf("%n%n========%s=======", "should not see this...");
 
+      //redirect
+      return "redirect:/players/add";
     }
+    System.out.printf("%n%n========%s=======", player.toString());
     playerService.save(player);
     redirectAttributes
         .addFlashAttribute("flash", new FlashMessage("Player added!", FlashMessage.Status.SUCCESS));
 
-    return String.format("redirect:/players/%s", player.getId());
+    return "redirect:/players";
   }
-
 
   @RequestMapping(value = "/players/{playerId}", method = RequestMethod.POST)
   public String postPlayerUpdate(@Valid Player player,

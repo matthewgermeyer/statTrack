@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head('form')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+<!-- boilerplate -->
+
+<div class="container upload">
+    <div class="row">
+        <div class="col s12">
+            <h2 th:text="${heading}">Add/Edit Team</h2>
+            <div class="subtitle"> Enter team details.
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!--${action} allows this form to function as add/update-->
+    <form th:action="@{${action}}" method="post" th:object="${team}">
+        <input type="hidden" th:field="*{id}"/>
+
+        <!-- team name input and th:if errors -->
+        <div class="row">
+            <div class="col s12 l8"
+                 th:classappend="${#fields.hasErrors('teamName')}? 'error' : ''">
+                <input type="text" th:field="*{teamName}" placeholder="team Name"/>
+                <div class="error-message" th:if="${#fields.hasErrors('teamName')}"
+                     th:errors="*{teamName}"></div>
+            </div>
+        </div>
+
+        <!-- manager name input and th:if errors -->
+        <div class="row">
+            <div class="col s12 l8"
+                 th:classappend="${#fields.hasErrors('managerName')}? 'error' : ''">
+                <input type="text" th:field="*{managerName}" placeholder="Manager Name"/>
+                <div class="error-message" th:if="${#fields.hasErrors('managerName')}"
+                     th:errors="*{managerName}"></div>
+            </div>
+        </div>
+
+        <!-- venue input and th:if errors -->
+        <div class="row">
+            <div class="col s12 l8"
+                 th:classappend="${#fields.hasErrors('homeGround')}? 'error' : ''">
+                <input type="text" th:field="*{homeGround}" placeholder="Stadium"/>
+                <div class="error-message" th:if="${#fields.hasErrors('homeGround')}"
+                     th:errors="*{homeGround}"></div>
+            </div>
+        </div>
+
+        <!-- ${Submit} and Cancel -->
+        <div class="row">
+            <div class="col s12 l8">
+                <button th:text="${submit}" type="submit" class="button">Add</button>
+                <a th:href="@{/teams}" class="button">Cancel</a>
+            </div>
+        </div>
+    </form>
+
+    <!--Delete button th:if player exists -->
+    <div class="row delete" th:if="${team.id != null}">
+        <div class="col s12 l8">
+            <form th:action="@{|/teams/${team.id}/delete|}" method="post">
+                <button type="submit" class="button">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- boilerplate -->
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

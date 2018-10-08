@@ -6,28 +6,28 @@ import java.util.List;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-@Entity
+@Entity(name = "Team")
 public class Team {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   @Column
-  @NotNull
   @Size(min = 4, max = 30)
   private String teamName;
   @Column
   private String managerName;
   @Column
   private String homeGround;
-  @OneToMany(mappedBy = "team", fetch = FetchType.EAGER)
+  @OneToMany(
+      mappedBy = "team"
+//      cascade = CascadeType.ALL
+  )
   List<Player> players;
 
   private static final String SPURS_NAME = "Tottenham Hotspur FC";
@@ -92,6 +92,10 @@ public class Team {
   //getters and setters
   public String getTeamName() {
     return teamName;
+  }
+
+  public void setTeamName(String teamName) {
+    this.teamName = teamName;
   }
 
   public String getManagerName() {
@@ -193,6 +197,16 @@ public class Team {
       roster.add(p.getName());
     }
     return roster;
+  }
+
+  public void addPlayer(Player player) {
+    players.add(player);
+    player.setTeam(this);
+  }
+
+  public void removePlayer(Player player) {
+    players.remove(player);
+    player.setTeam(null);
   }
 
 }//class

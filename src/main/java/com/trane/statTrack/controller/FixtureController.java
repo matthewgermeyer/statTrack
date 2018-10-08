@@ -15,12 +15,6 @@ public class FixtureController {
   @Autowired
   private TeamService teamService;
 
-
-  @RequestMapping("/")
-  public String index() {
-    return "NLD";
-  }
-
   @RequestMapping("/NLD")
   public String nldCaps() {
     return "NLD";

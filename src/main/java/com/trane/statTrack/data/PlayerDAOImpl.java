@@ -30,13 +30,12 @@ public class PlayerDAOImpl implements PlayerDAO {
     session.close();
   }
 
-  public Long save(Player player) {
+  public void save(Player player) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    Long id = (Long)session.save(player);
+    session.saveOrUpdate(player);
     session.getTransaction().commit();
     session.close();
-    return id;
 
   }
 
