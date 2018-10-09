@@ -21,9 +21,10 @@
 
     <div class="row">
         <div class="col s12 card" th:each="player : ${players}">
-            <a th:href="@{|/teams/${team.id}|}"> <span th:text="${player.name}"></span><span> | </span>
-            <span th:text="${player.position}"></span><span> | </span>
-            <span th:text="${player.team.teamName}"></span></a>
+            <a th:href="@{|/players/${player.id}|}">
+                <span th:text="${player.name}"></span><span> | </span>
+                <span th:text="${player.position}"></span><span> | </span>
+                <span th:text="${player.team.teamName}"></span></a>
         </div>
     </div>
 </div>
