@@ -31,13 +31,10 @@ public class DataConfig {
     @Bean
     public DataSource dataSource() {
         BasicDataSource ds = new BasicDataSource();
-
         // Driver class name
         ds.setDriverClassName(env.getProperty("statTrack.db.driver"));
-
         // Set URL
         ds.setUrl(env.getProperty("statTrack.db.url"));
-
         // Set username & password
         ds.setUsername(env.getProperty("statTrack.db.username"));
         ds.setPassword(env.getProperty("statTrack.db.password"));

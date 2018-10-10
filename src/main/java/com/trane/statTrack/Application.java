@@ -15,14 +15,7 @@ public class Application {
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
 
-//    Team arsenal = teamService.generateArsenalTeam();
-//    Team spurs = teamService.generateSpursTeam();
-//    teamService.save(arsenal);
-//    teamService.save(spurs);
-
   }
-
-
 }
 
 
