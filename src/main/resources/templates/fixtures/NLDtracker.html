@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <meta description="viewport" content="width=device-width, initial-scale=1"/>
+    <link th:href="@{/css/app.css}" rel="stylesheet" />
+    <title>statTrack</title>
+</head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+
+<div class="container">
+    <h3>Welcome to the North London Derby!</h3>
+
+    <div class="container">
+        <h2 th:text="${instruction}"> Should not see this. </h2>
+        <form action="/nld/tracker/update" method="post">
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Goals</th>
+                    <th>Passes</th>
+                    <th>Assists</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="name: ${roster}">
+                    <td> <input type="checkbox" name="active"/> </td>
+                    <td th:text="${name}"></td>
+                    <td>
+                        <button>Goal</button>
+                    </td>
+                    <td>
+                        <button>Pass</button>
+                    </td>
+                    <td>
+                        <button>Assist</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <label for="active">Is Active</label>
+            <input type="checkbox" id="active" name="active"/>
+            <button type="submit">Update Roster</button>
+        </form>
+    </div>
+
+</div>
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

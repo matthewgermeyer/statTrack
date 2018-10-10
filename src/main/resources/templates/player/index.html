@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout :: head('players')"></head>
+<body>
+<div th:replace="layout :: nav"></div>
+<div th:replace="layout :: searchbar"></div>
+<div th:replace="layout :: flash"></div>
+<!-- end boilerplate -->
+
+<div class="container">
+    <div class="row">
+        <div class="col s9">
+            <h2 class="center">Players</h2>
+        </div>
+        <div class="col s3">
+            <a class="right add" href="/players/add">
+                <h2>+</h2></a>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="row">
+        <div class="col s12 card" th:each="player : ${players}">
+            <a th:href="@{|/players/${player.id}|}">
+                <span th:text="${player.name}"></span><span> | </span>
+                <span th:text="${player.position}"></span><span> | </span>
+                <span th:text="${player.team.teamName}"></span></a>
+        </div>
+    </div>
+</div>
+
+<!-- boilerplate -->
+<div th:replace="layout :: scripts"></div>
+</body>
+</html>

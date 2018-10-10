@@ -1,26 +1,58 @@
 package com.trane.statTrack.model;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+@Entity
+@Table(name="player")
 public class Player {
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name="id", updatable = false, nullable = false)
   private Long id;
-  private String name;
-  private Map<Actions, Detail> statbook;
 
-  //constructors
+  @NotNull
+  @Size(min = 4, max = 30)
+  private String name;
+
+  @NotNull
+  @ManyToOne
+  @JoinColumn(name = "fk_team")
+  private Team team;
+
+  @NotNull
+  private String position;
+
+
+  //default constructor for JPA
   public Player() {
   }
 
   public Player(String name) {
-
     this.name = name;
-    this.statbook = new HashMap<>();
-
   }
 
   //getters and setters
+
+
+
+
+  public Team getTeam() {
+    return team;
+  }
+
+  public void setTeam(Team team) {
+    this.team = team;
+  }
 
   public Long getId() {
     return id;
@@ -30,20 +62,20 @@ public class Player {
     this.id = id;
   }
 
-  public Map<Actions, Detail> getStatbook() {
-    return statbook;
-  }
-
-  public void setStatbook(Map<Actions, Detail> statbook) {
-    this.statbook = statbook;
-  }
-
   public String getName() {
     return name;
   }
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public String getPosition() {
+    return position;
+  }
+
+  public void setPosition(String position) {
+    this.position = position;
   }
 
   //Overriden methods
@@ -56,39 +88,26 @@ public class Player {
       return false;
     }
     Player player = (Player) o;
-    return Objects.equals(name, player.name);
+    return Objects.equals(id, player.id) &&
+        Objects.equals(name, player.name) &&
+        Objects.equals(team, player.team);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(id, name, team);
   }
 
   @Override
   public String toString() {
-    return String.format("%s%n", name);
+    final StringBuilder sb = new StringBuilder("Player: ");
+    sb.append("id=").append(id);
+    sb.append(", name='").append(name).append('\'');
+    sb.append(", team=").append(team);
+    sb.append(", position='").append(position).append('\'');
+    sb.append('}');
+    return sb.toString();
   }
-
-  //Statbook methods
-  //TODO: write method to jot into statbook / write test cases
-  public void jot(Actions toAdd, Detail detail) {
-    if (statbook != null) {
-      statbook.put(toAdd, detail);
-      System.out.printf(
-          "%n ------> Added Action : %s%n " +
-              "Description: %s%n",
-          toAdd.toString(),
-          detail.toString());
-      setStatbook(statbook);
-
-    }
-    Map<Actions, Detail> statbook = new HashMap<>();
-    statbook.put(toAdd, detail);
-    setStatbook(statbook);
-
-  }
-
-
 }
 
 

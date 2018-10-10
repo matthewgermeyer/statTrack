@@ -8,5 +8,7 @@ public interface PlayerService {
   List<Player> findAll();
   Player findById(Long id);
   void save(Player player);
-  void delete(Player player);
+  void update(Player player);
+  void delete(Long id);
+
 }
