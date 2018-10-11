@@ -1,7 +1,7 @@
 package com.trane.statTrack.controller;
 
 import com.trane.statTrack.model.Player;
-import com.trane.statTrack.model.Position;
+import com.trane.statTrack.util.Position;
 import com.trane.statTrack.service.PlayerService;
 import com.trane.statTrack.service.TeamService;
 import com.trane.statTrack.util.FlashMessage;

@@ -36,5 +36,8 @@ dependencies {
     compile 'com.h2database:h2:1.4.191'
     compile 'javax.transaction:jta:1.1'
     compile 'org.hashids:hashids:1.0.1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }

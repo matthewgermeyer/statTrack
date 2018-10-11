@@ -1,45 +1,27 @@
 package com.trane.statTrack.model;
 
-import java.time.LocalDateTime;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Objects;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-@Entity
-@Table(name = "fixture")
+
 public class Fixture {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  @Transient
-  private List<Team> teams;
-
-  private String homeTeamName;
-
-  private String awayTeamName;
-  @Transient
-  private Team homeTeam;
-  @Transient
-  private Team awayTeam;
-
-  private String venue;
-
+  private String opponent;
   private String date;
+  boolean isHome;
 
-  //constructors 2 : full(minus id) and empty
-  public Fixture(Team home, Team away) {
-    this.teams = Arrays.asList(home, away);
-    this.homeTeam = home;
-    this.awayTeam = away;
-    this.homeTeamName = home.getTeamName();
-    this.awayTeamName = away.getTeamName();
-    this.venue = home.getHomeGround();
-    this.date = LocalDateTime.now().toString().substring(0, 10);
+  //constructors
+  public Fixture(String opponent, String date, String site) {
+    this.opponent = opponent;
+    this.date = date;
+    if (site.toLowerCase().equals("home")) {
+      this.isHome=true;
+    } else {
+      isHome = false;
+    }
   }
 
   public Fixture() {
@@ -54,52 +36,12 @@ public class Fixture {
     this.id = id;
   }
 
-  public List<Team> getTeams() {
-    return teams;
+  public String getOpponent() {
+    return opponent;
   }
 
-  public void setTeams(List<Team> teams) {
-    this.teams = teams;
-  }
-
-  public String getHomeTeamName() {
-    return homeTeamName;
-  }
-
-  public void setHomeTeamName(String homeTeamName) {
-    this.homeTeamName = homeTeamName;
-  }
-
-  public String getAwayTeamName() {
-    return awayTeamName;
-  }
-
-  public void setAwayTeamName(String awayTeamName) {
-    this.awayTeamName = awayTeamName;
-  }
-
-  public Team getHomeTeam() {
-    return homeTeam;
-  }
-
-  public void setHomeTeam(Team homeTeam) {
-    this.homeTeam = homeTeam;
-  }
-
-  public Team getAwayTeam() {
-    return awayTeam;
-  }
-
-  public void setAwayTeam(Team awayTeam) {
-    this.awayTeam = awayTeam;
-  }
-
-  public String getVenue() {
-    return venue;
-  }
-
-  public void setVenue(String venue) {
-    this.venue = venue;
+  public void setOpponent(String opponent) {
+    this.opponent = opponent;
   }
 
   public String getDate() {
@@ -110,18 +52,15 @@ public class Fixture {
     this.date = date;
   }
 
-  //overriden methods
-  @Override
-  public String toString() {
-    return "Fixture{" +
-        ", homeTeamName='" + homeTeamName + '\'' +
-        ", awayTeamName='" + awayTeamName + '\'' +
-        ", venue='" + venue + '\'' +
-        +'\'' +
-        ", date='" + date + '\'' +
-        '}';
+  public boolean isHome() {
+    return isHome;
   }
 
+  public void setHome(boolean home) {
+    isHome = home;
+  }
+
+  //overriden methods
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -131,24 +70,22 @@ public class Fixture {
       return false;
     }
     Fixture fixture = (Fixture) o;
-    return Objects.equals(teams, fixture.teams) &&
-        Objects.equals(homeTeamName, fixture.homeTeamName) &&
-        Objects.equals(awayTeamName, fixture.awayTeamName) &&
-        Objects.equals(homeTeam, fixture.homeTeam) &&
-        Objects.equals(awayTeam, fixture.awayTeam) &&
-        Objects.equals(venue, fixture.venue) &&
+    return Objects.equals(id, fixture.id) &&
+        Objects.equals(opponent, fixture.opponent) &&
         Objects.equals(date, fixture.date);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(teams, homeTeamName, awayTeamName, homeTeam, awayTeam, venue, date);
+    return Objects.hash(id, opponent, date);
   }
 
-  public static Fixture generateNorthLondonDerby() {
-    return new Fixture(Team.generateSpursTeam(), Team.generateArsenalTeam());
-
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder();
+    sb.append(opponent);
+    sb.append(isHome ? (" | home") : (" | away"));
+    sb.append("on " + date);
+    return sb.toString();
   }
-
-
 }

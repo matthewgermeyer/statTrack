@@ -1,5 +1,6 @@
 package com.trane.statTrack.data;
 
+import com.trane.statTrack.model.Player;
 import com.trane.statTrack.model.Team;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
@@ -72,5 +73,10 @@ public class TeamDAOImpl implements TeamDAO{
     session.close();
 
     return teams;
+  }
+
+  @Override
+  public List<Player> allPlayers() {
+    return null;
   }
 }

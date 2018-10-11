@@ -1,6 +1,7 @@
 package com.trane.statTrack.controller;
 
 import com.trane.statTrack.exc.TeamNotEmptyException;
+import com.trane.statTrack.model.Player;
 import com.trane.statTrack.model.Team;
 import com.trane.statTrack.service.PlayerService;
 import com.trane.statTrack.service.TeamService;
@@ -33,11 +34,6 @@ public class TeamController {
   // All Teams
   @RequestMapping("/teams")
   public String listTeams(Model model) {
-    //TODO: Move this later
-//    Team spurs = teamService.generateSpursTeam();
-//    Team arsenal = teamService.generateArsenalTeam();
-//    teamService.save(spurs);
-//    teamService.save(arsenal);
 
     List<Team> teams = teamService.findAll();
     model.addAttribute("teams", teams);
@@ -48,7 +44,9 @@ public class TeamController {
   @RequestMapping("/teams/{id}")
   public String team(@PathVariable Long id, Model model) {
     Team team = teamService.findById(id);
+    List<Player> players = teamService.allPlayers();
     model.addAttribute("team", team);
+    model.addAttribute("players",players);
     return "team/detail";
   }
 
@@ -161,11 +159,11 @@ public class TeamController {
   //TODO: Complete or phase out
   @RequestMapping("/nld/tracker")
   public String trackerGet(ModelMap modelMap) {
-    Team spurs = teamService.generateSpursTeam();
-
-    List<String> roster = spurs.getRoster();
-    modelMap.addAttribute("team", spurs);
-    modelMap.addAttribute("roster", roster);
+//    Team spurs = teamService.generateSpursTeam();
+//
+//    List<String> roster = spurs.getRoster();
+//    modelMap.addAttribute("team", spurs);
+//    modelMap.addAttribute("roster", roster);
     return "NLDtracker";
   }
 

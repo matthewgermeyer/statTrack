@@ -2,11 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29311e90-9fd3-43e1-939d-dd3fe1d464f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/StatCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Action.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/statTrack.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/statTrack.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/controller/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/controller/TeamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/model/Detail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/model/Detail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/model/Fixture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/model/Fixture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/service/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/service/TeamService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/service/TeamServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/trane/statTrack/service/TeamServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,59 +101,60 @@
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="7" />
           <entry key="gitignore" value="1" />
-          <entry key="gradle" value="3" />
-          <entry key="html" value="53" />
-          <entry key="java" value="231" />
+          <entry key="gradle" value="4" />
+          <entry key="html" value="56" />
+          <entry key="java" value="253" />
           <entry key="jpg" value="2" />
           <entry key="js" value="2" />
           <entry key="md" value="1" />
           <entry key="png" value="23" />
           <entry key="properties" value="8" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="9" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="Groovy" value="3" />
-          <entry key="HTML" value="53" />
+          <entry key="Groovy" value="4" />
+          <entry key="HTML" value="56" />
           <entry key="Image" value="25" />
-          <entry key="JAVA" value="231" />
+          <entry key="JAVA" value="253" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="8" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="9" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="5" />
-          <entry key="gradle" value="39" />
+          <entry key="gradle" value="47" />
           <entry key="html" value="3914" />
-          <entry key="java" value="14055" />
+          <entry key="java" value="17143" />
           <entry key="properties" value="550" />
           <entry key="sql" value="8" />
-          <entry key="xml" value="41" />
+          <entry key="xml" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="Groovy" value="39" />
+          <entry key="Groovy" value="47" />
           <entry key="HTML" value="3914" />
-          <entry key="JAVA" value="14055" />
+          <entry key="JAVA" value="17143" />
           <entry key="OdpsQL" value="8" />
           <entry key="Properties" value="550" />
-          <entry key="XML" value="41" />
+          <entry key="XML" value="108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -143,73 +163,136 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/TemplateConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="382">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <folding>
+                <element signature="method#Fixture#0;class#Fixture#0" />
+                <element signature="method#Fixture#1;class#Fixture#0" />
+                <element signature="method#equals#0;class#Fixture#0" />
+                <element signature="method#toString#0;class#Fixture#0" />
+                <marker date="1539233275000" expanded="false" signature="643:1103" ph="..." />
+                <marker date="1539233275000" expanded="false" signature="1128:1794" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/StatCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="582">
+              <caret line="78" column="88" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setStats#0;class#StatCard#0" />
+                <element signature="method#constructStatMap#0;class#StatCard#0" />
+                <marker date="1539230511000" expanded="false" signature="566:1113" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="680">
+              <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="450">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <element signature="method#Team#0;class#Team#0" />
+                <element signature="method#Team#1;class#Team#0" />
+                <element signature="method#equals#0;class#Team#0" />
+                <element signature="method#toString#0;class#Team#0" />
+                <element signature="method#generateSpursTeam#0;class#Team#0" />
+                <element signature="method#generateArsenalTeam#0;class#Team#0" />
+                <element signature="method#generatePlayersFromRoster#0;class#Team#0" />
+                <element signature="method#getRoster#0;class#Team#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/app.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="230">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/AppConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="371">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="method#equals#0;class#Detail#0" />
+                <element signature="method#toString#0;class#Detail#0" />
+                <marker date="1539233275000" expanded="false" signature="604:1023" ph="..." />
+                <marker date="1539233275000" expanded="false" signature="1051:1707" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4652">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-start-column="2" selection-end-line="165" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1402#1403#0" expanded="true" />
+                <element signature="method#equals#0;class#Player#0" />
+                <element signature="method#toString#0;class#Player#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,6 +324,7 @@
       <find>+</find>
       <find>players</find>
       <find>comment</find>
+      <find>report</find>
     </findStrings>
     <replaceStrings>
       <replace>fixture</replace>
@@ -454,9 +538,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6154791882000" />
+        <entry key="$PROJECT_DIR$" value="6154807979000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1355297631" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1202260188" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3915409425" />
       </map>
@@ -657,9 +741,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/players.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/DetailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/DetailService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/error.html" />
@@ -674,15 +755,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/DetailController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/TeamTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/player/players.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/team/detail.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/exc/TeamNotEmptyException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java" />
@@ -690,29 +767,36 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/team/form.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/player/detail.html" />
         <option value="$PROJECT_DIR$/src/test/java/com/trane/statTrack/model/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/PlayerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/player/form.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/team/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" />
         <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/player/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfigCrudRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/StatCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="46" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="70" />
     <option name="y" value="23" />
     <option name="width" value="1370" />
     <option name="height" value="860" />
@@ -773,6 +857,24 @@
               <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statTrack" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="statTrack" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -792,18 +894,60 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="statTrack" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="team" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="statTrack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/MattyG/code/statTrack/src/main/java/com/trane/statTrack/controller/TeamController.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539207901024" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/MattyG/code/statTrack/src/main/java/com/trane/statTrack/model/StatCard.java" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539233078033" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -934,35 +1078,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="23" width="1370" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project Explorer" weight="0.32981315" />
-      <window_info id="Job Explorer" weight="0.32981315" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5637681" visible="true" weight="0.22740965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5637681" visible="true" weight="0.22138554" />
       <window_info id="Structure" order="1" sideWeight="0.43704775" side_tool="true" weight="0.2515611" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Console" />
+      <window_info id="Project Explorer" order="7" weight="0.32981315" />
+      <window_info id="Job Explorer" order="8" weight="0.32981315" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40625" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12890625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32846716" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36363637" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36328125" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32846716" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.54545456" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.5442708" />
+      <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.1816056" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.18147591" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
@@ -1005,24 +1150,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/fulham-fc-logo-png.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/everton-fc-hd-logo-png.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/derby-county-fc-logo-png.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/crystal-palace-fc.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/eplbadges/chelsea.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/jan-held-back.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/images/nld/arsenal-badge.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1036,13 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1067,38 +1187,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/player/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1109,13 +1201,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/FixtureController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/FixtureService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1130,66 +1216,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/player/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1216,38 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="method#Team#0;class#Team#0" />
-            <element signature="method#Team#1;class#Team#0" />
-            <element signature="method#equals#0;class#Team#0" />
-            <element signature="method#toString#0;class#Team#0" />
-            <element signature="method#generateSpursTeam#0;class#Team#0" />
-            <element signature="method#generateArsenalTeam#0;class#Team#0" />
-            <element signature="method#generatePlayersFromRoster#0;class#Team#0" />
-            <element signature="method#getRoster#0;class#Team#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1402#1403#0" expanded="true" />
-            <element signature="method#equals#0;class#Player#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1268,51 +1266,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/vendor/codrops/css/cs-skin-border.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfigCrudRepo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/import.sql">
-      <provider editor-type-id="OdpsQlGraph" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="11" column="85" lean-forward="true" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="OdpsQlEditor">
-        <state relative-caret-position="510">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1323,33 +1283,324 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/DetailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/PlayerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="16" />
+          <folding>
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2095#2096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/TeamDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/data/PlayerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/FlashMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/util/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/TemplateConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="52">
           <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfigCrudRepo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1001">
-          <caret line="19" selection-end-line="57" />
+        <state relative-caret-position="215">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/team/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1649">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/DataConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="34">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/config/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="-189">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/service/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/controller/TeamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4652">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-start-column="2" selection-end-line="165" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding>
+            <element signature="method#Fixture#0;class#Fixture#0" />
+            <element signature="method#Fixture#1;class#Fixture#0" />
+            <element signature="method#equals#0;class#Fixture#0" />
+            <element signature="method#toString#0;class#Fixture#0" />
+            <marker date="1539233275000" expanded="false" signature="643:1103" ph="..." />
+            <marker date="1539233275000" expanded="false" signature="1128:1794" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="method#equals#0;class#Player#0" />
+            <element signature="method#toString#0;class#Player#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/StatCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="78" column="88" selection-start-line="78" selection-start-column="88" selection-end-line="78" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setStats#0;class#StatCard#0" />
+            <element signature="method#constructStatMap#0;class#StatCard#0" />
+            <marker date="1539230511000" expanded="false" signature="566:1113" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="method#Team#0;class#Team#0" />
+            <element signature="method#Team#1;class#Team#0" />
+            <element signature="method#equals#0;class#Team#0" />
+            <element signature="method#toString#0;class#Team#0" />
+            <element signature="method#generateSpursTeam#0;class#Team#0" />
+            <element signature="method#generateArsenalTeam#0;class#Team#0" />
+            <element signature="method#generatePlayersFromRoster#0;class#Team#0" />
+            <element signature="method#getRoster#0;class#Team#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trane/statTrack/model/Detail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="method#equals#0;class#Detail#0" />
+            <element signature="method#toString#0;class#Detail#0" />
+            <marker date="1539233275000" expanded="false" signature="604:1023" ph="..." />
+            <marker date="1539233275000" expanded="false" signature="1051:1707" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>statTrack</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -1,33 +1,27 @@
 package com.trane.statTrack.model;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import com.trane.statTrack.util.Action;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name="detail")
+
 public class Detail {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  Long id;
-  @Column
-  String timeStamp;
-  @Column
-  String description;
+  private Long id;
+  //  private final
+  private String name;
+  private List<String> timestamps = new ArrayList<>();
+  private int count = 0;
 
-  //Constructors 2
-  public Detail(String description) {
-    this.timeStamp = timeStamp();
-    this.description = description;
-  }
-
-  public Detail() {
+  //Constructors
+  public Detail(Action action) {
+    this.name = action.name();
   }
 
   //getters and setters
@@ -39,23 +33,27 @@ public class Detail {
     this.id = id;
   }
 
-  public String getTimeStamp() {
-    return timeStamp;
+  public List<String> getTimestamps() {
+    return timestamps;
   }
 
-  public void setTimeStamp(String timeStamp) {
-    this.timeStamp = timeStamp;
+  public String getName() {
+    return name;
   }
 
-  public String getDescription() {
-    return description;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public void setDescription(String description) {
-    this.description = description;
+  public void setTimestamps(List<String> timestamps) {
+    this.timestamps = timestamps;
   }
 
-  //Overriden methods
+  public int getCount() {
+    return count;
+  }
+  
+  //Overriden Methods
   @Override
   public boolean equals(Object o) {
     if (this == o) {
@@ -65,18 +63,28 @@ public class Detail {
       return false;
     }
     Detail detail = (Detail) o;
-    return Objects.equals(timeStamp, detail.timeStamp) &&
-        Objects.equals(description, detail.description);
+    return count == detail.count &&
+        Objects.equals(id, detail.id) &&
+        Objects.equals(timestamps, detail.timestamps);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(timeStamp, description);
+    return Objects.hash(id, timestamps, count);
   }
 
-
-  public static String timeStamp() {
-    String time = new SimpleDateFormat("HH.mm.ss").format(new Date());
-    return time;
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder("Detail{");
+    sb.append(name).append(": " + count);
+    sb.append("times: %s ");
+    sb.append(timestamps);
+    return sb.toString();
   }
-}
+
+  public void tallyAction() {
+    count += 1;
+    timestamps.add("Now");
+  }
+
+} //class
