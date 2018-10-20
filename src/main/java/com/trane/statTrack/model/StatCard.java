@@ -14,6 +14,7 @@ public class StatCard {
     private List<Detail> actionDetails;
     private Map<Action, Detail> stats = new HashMap<>();
 
+
     public StatCard() {
         this.actions = Arrays.asList(Action.values());
         this.actionDetails = new ArrayList<>();
@@ -67,12 +68,6 @@ public class StatCard {
         d.tallyAction();
         System.out.println("Another Goal!");
     }
-
-    //TODO: Finish
-    private void constructStatMap() {
-
-    }
-
 
     public void report() {
         System.out.printf("===================%n");

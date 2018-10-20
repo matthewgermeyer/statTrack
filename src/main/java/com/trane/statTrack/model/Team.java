@@ -1,7 +1,6 @@
 package com.trane.statTrack.model;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import javax.persistence.Column;
@@ -31,47 +30,7 @@ public class Team {
   @OneToMany(mappedBy = "team")
   List<Player> players;
 
-  private static final String SPURS_NAME = "Tottenham Hotspur FC";
-  private static final String SPURS_MANAGER = "Mauricio Pochetino";
-  private static final String SPURS_GROUND = "White Hart Lane";
-  private static final List<String> SPURS_PLAYERS_NAMES = Arrays.asList(
-      "Hugo Lloris",
-      "Toby Alderweireld",
-      "Jan Vertonghen",
-      "Davinson Sanchez",
-      "Kieren Trippier",
-      "Ben Davies",
-      "Moussa Dembele",
-      "Eric Dier",
-      "Christian Eriksen",
-      "Erik Lamela",
-      "Son Heung Min",
-      "Harry Kane",
-      "Lucas Moura",
-      "Danny Rose"
-  );
-
-  private static final String ARSENAL_NAME = "Arsenal FC";
-  private static final String ARSENAL_MANAGER = "Unai Emergy";
-  private static final String ARSENAL_GROUND = "Emirates Stadium";
-  private static final List<String> ARSENAL_PLAYERS_NAMES = Arrays.asList(
-      "Petr Cech",
-      "Bernd Leno",
-      "Sokratis",
-      "Koscielny",
-      "Bellerin",
-      "Mustafi",
-      "Monreal",
-      "Mesut Ozil",
-      "Lucas Torreira",
-      "Matteo Guendouzi",
-      "Granit Xhaka",
-      "Lacazette",
-      "Aubameyang",
-      "Welbeck"
-  );
-
-  //Constructors (3) : short, long, empty
+  //Constructors
   public Team(String teamName) {
     this.teamName = teamName;
     this.managerName = "not set";
@@ -163,18 +122,6 @@ public class Team {
         ", homeGround='" + homeGround + '\'' +
         ", players=" + players +
         '}';
-  }
-
-  public static Team generateSpursTeam() {
-    Team spurs = new Team(SPURS_NAME, SPURS_MANAGER, SPURS_GROUND, SPURS_PLAYERS_NAMES);
-    spurs.setPlayers(generatePlayersFromRoster(SPURS_PLAYERS_NAMES, spurs));
-    return spurs;
-  }
-
-  public static Team generateArsenalTeam() {
-    Team arsenal = new Team(ARSENAL_NAME, ARSENAL_MANAGER, ARSENAL_GROUND, ARSENAL_PLAYERS_NAMES);
-    arsenal.setPlayers(generatePlayersFromRoster(ARSENAL_PLAYERS_NAMES, arsenal));
-    return arsenal;
   }
 
   //returns a list of Player objects from a roster, adds to team.

@@ -1,6 +1,5 @@
 package com.trane.statTrack;
 
-import com.trane.statTrack.model.StatCard;
 import com.trane.statTrack.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -15,14 +14,6 @@ public class Application {
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
-
-    StatCard card = new StatCard();
-
-    card.report();
-    card.addGoal();
-    card.report();
-    card.addGoal();
-    card.addGoal();
 
 
   }

@@ -52,7 +52,7 @@ public class Detail {
   public int getCount() {
     return count;
   }
-  
+
   //Overriden Methods
   @Override
   public boolean equals(Object o) {

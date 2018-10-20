@@ -10,8 +10,6 @@ import java.util.List;
 @Service
 public class PlayerServiceImpl implements PlayerService {
   @Autowired
-  TeamService teamService;
-  @Autowired
   PlayerDAO playerDAO;
 
   @Override

@@ -10,6 +10,5 @@ public interface FixtureService {
   void save(Fixture fixture);
   void delete(Long id);
   void update(Fixture fixture);
-  Fixture generateNorthLondonDerby();
 
 }

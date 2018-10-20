@@ -39,8 +39,4 @@ public class FixtureServiceImpl implements FixtureService {
 
   }
 
-  @Override
-  public Fixture generateNorthLondonDerby() {
-    return Fixture.generateNorthLondonDerby();
-  }
 }

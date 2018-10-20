@@ -8,15 +8,11 @@
         <property name="dialect">org.hibernate.dialect.H2Dialect</property>
 
         <!-- Create database schema on startup -->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create-drop</property>
 
         <!-- Show queries prepared by Hibernate -->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
-
-        <!-- hibernate timezone UTC -->
-        <!--  <property name="hibernate.jdbc.time_zone" value="UTC"></property>
-        -->
 
         <!-- Names the annotated entity classes -->
         <mapping class="com.trane.statTrack.model.Player"/>
