@@ -9,13 +9,13 @@ import com.trane.statTrack.util.FlashMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.validation.Valid;
 
@@ -44,9 +44,20 @@ public class TeamController {
   @RequestMapping("/teams/{id}")
   public String team(@PathVariable Long id, Model model) {
     Team team = teamService.findById(id);
-    List<Player> players = teamService.allPlayers();
+    List<Player> players = team.getPlayers();
+    List<Player> starters = new ArrayList<>();
+
+    if (starters.size() > 0){
+      model.addAttribute("starters", starters);
+    }
+    /*
+    Originally populated names using a lambda, but can access this off the player object.
+    List<String> names = new ArrayList<>();
+    players.forEach(player -> names.add(player.getName()));
+    model.addAttribute("names",names);
+    */
     model.addAttribute("team", team);
-    model.addAttribute("players",players);
+    model.addAttribute("players", players);
     return "team/detail";
   }
 
@@ -154,17 +165,6 @@ public class TeamController {
 
     Team team = teamService.findById(id);
     return "player/form";
-  }
-
-  //TODO: Complete or phase out
-  @RequestMapping("/nld/tracker")
-  public String trackerGet(ModelMap modelMap) {
-//    Team spurs = teamService.generateSpursTeam();
-//
-//    List<String> roster = spurs.getRoster();
-//    modelMap.addAttribute("team", spurs);
-//    modelMap.addAttribute("roster", roster);
-    return "NLDtracker";
   }
 
 

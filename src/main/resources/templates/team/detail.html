@@ -8,27 +8,75 @@
 
 <div class="container">
     <div class="row">
-        <div class="center col s9">
-            <h2 class="center" th:text="${team.teamName}">Teams</h2>
-            <h4 th:text="'Manager: ' + ${team.managerName}"></h4>
-            <h4 th:text="'Venue: ' + ${team.homeGround}"></h4>
-        </div>
-        <div class="col s3">
-            <a class="right add" href="/teams/${team.id}/recruit">+</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="container card">
-            <div th:each="player : ${team.players}" class="col s12 l4">
-                <!-- TODO: implement favorites and player images later -->
-                <!--<a th:href="@{|/players/${player.id}|}">-->
-                <!--<img th:src="@{|/players/${player.id}.jpg|}" />-->
-                <!--<a href="#" th:class="(${player.favorite}? 'un' : '') + 'mark favorite'"></a>-->
-                <!--</a>-->
-            </div>
+        <div class="center">
+            <h4 th:text="${team.teamName}">Teams</h4>
+            <p th:text="'Manager: ' + ${team.managerName}"></p>
+            <p th:text="'Venue: ' + ${team.homeGround}"></p>
         </div>
     </div>
 </div>
+
+<!--Stat Tracking-->
+<div class="container" th:if="${starters} != null">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Key Passes</th>
+            <th>Skills</th>
+            <th>Saves</th>
+            <th>Errors</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="player : ${players}">
+            <td th:text="${player.name}"></td>
+            <td>Goal</td>
+            <td>Assist</td>
+            <td>Key Passes</td>
+            <td>Skills</td>
+            <td>Saves</td>
+            <td>Errors</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Choose starters-->
+<div class="container" th:if="${starters} == null">
+    <table>
+        <thead>
+        <tr>
+            <th colspan="3">Select Starting Lineup</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="player : ${players}">
+            <td>
+                <input type="checkbox" th:id="${player.name}" name="starters"
+                       value="starter"/>
+                <label th:for="${player.name}"></label>
+            </td>
+            <td th:text="${player.name}"></td>
+            <td th:text="${player.position}">Position</td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">Submit Starters</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+<!-- TODO: implement favorites and player images later -->
+<!--<a th:href="@{|/players/${player.id}|}">-->
+<!--<img th:src="@{|/players/${player.id}.jpg|}" />-->
+<!--<a href="#" th:class="(${player.favorite}? 'un' : '') + 'mark favorite'"></a>-->
+<!--</a>-->
 
 <div th:replace="layout :: scripts"></div>
 </body>
