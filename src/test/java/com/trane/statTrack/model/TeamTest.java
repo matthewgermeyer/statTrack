@@ -1,9 +1,9 @@
 package com.trane.statTrack.model;
 
-import static com.trane.statTrack.model.Team.*;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
+import com.trane.statTrack.team.Team;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -4,6 +4,9 @@
         <property name="connection.driver_class">org.h2.Driver</property>
         <property name="connection.url">jdbc:h2:./data/statTrack</property>
 
+        <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        </bean>
+
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.H2Dialect</property>
 
@@ -15,6 +18,6 @@
         <property name="format_sql">true</property>
 
         <!-- Names the annotated entity classes -->
-        <mapping class="com.trane.statTrack.model.Player"/>
+        <mapping class="com.trane.statTrack.player.Player"/>
     </session-factory>
 </hibernate-configuration>
