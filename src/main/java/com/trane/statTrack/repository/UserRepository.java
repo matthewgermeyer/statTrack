@@ -1,5 +1,6 @@
-package com.trane.statTrack.user;
+package com.trane.statTrack.repository;
 
+import com.trane.statTrack.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

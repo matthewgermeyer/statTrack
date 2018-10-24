@@ -1,8 +1,9 @@
-package com.trane.statTrack.team;
+package com.trane.statTrack.controller;
 
-import com.trane.statTrack.player.Player;
-import com.trane.statTrack.team.exc.TeamNotEmptyException;
-import com.trane.statTrack.util.FlashMessage;
+import com.trane.statTrack.model.Player;
+import com.trane.statTrack.model.Team;
+import com.trane.statTrack.service.TeamService;
+import com.trane.statTrack.model.FlashMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -150,6 +151,9 @@ public class TeamController {
         .addFlashAttribute("flash", new FlashMessage("Team deleted!", FlashMessage.Status.SUCCESS));
     return String.format("redirect:/teams/%s/edit", teamId);
 
+  }
+
+  public class TeamNotEmptyException extends RuntimeException{
   }
 
 }

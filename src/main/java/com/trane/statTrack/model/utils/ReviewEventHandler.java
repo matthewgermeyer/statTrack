@@ -1,7 +1,8 @@
-package com.trane.statTrack.review;
+package com.trane.statTrack.model.utils;
 
-import com.trane.statTrack.user.User;
-import com.trane.statTrack.user.UserRepository;
+import com.trane.statTrack.model.Review;
+import com.trane.statTrack.model.User;
+import com.trane.statTrack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;

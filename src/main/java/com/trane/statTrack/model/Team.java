@@ -1,7 +1,4 @@
-package com.trane.statTrack.team;
-
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.player.Player;
+package com.trane.statTrack.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +21,7 @@ public class Team extends BaseEntity {
   private Long id;
   @Size(min = 4, max = 30)
   private String teamName;
+  //TODO: ADD Version to entity classes
   private String managerName;
   private String homeGround;
 

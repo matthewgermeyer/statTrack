@@ -1,8 +1,4 @@
-package com.trane.statTrack.fixture;
-
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.team.Team;
-import com.trane.statTrack.review.Review;
+package com.trane.statTrack.model;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

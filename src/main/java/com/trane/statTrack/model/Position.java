@@ -1,4 +1,4 @@
-package com.trane.statTrack.util;
+package com.trane.statTrack.model;
 
 public enum Position {
   GOALKEEPER("GoalKeeper", "#b36859"),

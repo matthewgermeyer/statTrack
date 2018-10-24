@@ -1,7 +1,11 @@
-package com.trane.statTrack.player;
+package com.trane.statTrack.service;
+
+import com.trane.statTrack.model.Player;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface PlayerService {
   List<Player> findAll();
   Player findById(Long id);

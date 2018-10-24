@@ -1,4 +1,4 @@
-package com.trane.statTrack.util;
+package com.trane.statTrack.model;
 
 public enum Action {
     PASS("Passes: ", "#2ECC40"),
@@ -10,8 +10,8 @@ public enum Action {
     SAVE("Saves: ", "#b36859"),
     MISTAKE("Mistakes: ", "#FF4136");
 
-    private final String representation;
-    private final String hex;
+    public final String representation;
+    public final String hex;
 
     Action(String representation, String hex) {
         this.representation = representation;

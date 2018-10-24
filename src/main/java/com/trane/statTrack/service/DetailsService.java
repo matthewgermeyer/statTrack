@@ -1,5 +1,7 @@
-package com.trane.statTrack.user;
+package com.trane.statTrack.service;
 
+import com.trane.statTrack.repository.UserRepository;
+import com.trane.statTrack.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,8 +11,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DetailsService implements UserDetailsService {
-    @Autowired
+
     UserRepository users;
+    @Autowired
+    public void setUsers(UserRepository users) {
+        this.users = users;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

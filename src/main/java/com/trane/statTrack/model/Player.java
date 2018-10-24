@@ -1,7 +1,4 @@
-package com.trane.statTrack.player;
-
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.team.Team;
+package com.trane.statTrack.model;
 
 import java.util.Objects;
 import javax.persistence.Entity;

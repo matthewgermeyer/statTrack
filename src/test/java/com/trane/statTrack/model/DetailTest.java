@@ -3,7 +3,6 @@ package com.trane.statTrack.model;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
-import com.trane.statTrack.detail.Detail;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,7 +1,7 @@
 package com.trane.statTrack.config;
 
-import com.trane.statTrack.user.DetailsService;
-import com.trane.statTrack.user.User;
+import com.trane.statTrack.service.DetailsService;
+import com.trane.statTrack.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

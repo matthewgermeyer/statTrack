@@ -1,4 +1,4 @@
-package com.trane.statTrack.config;
+package com.trane.statTrack.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

@@ -1,12 +1,12 @@
-package com.trane.statTrack.config;
+package com.trane.statTrack.model.utils;
 
-import com.trane.statTrack.fixture.Fixture;
-import com.trane.statTrack.fixture.FixtureRepository;
-import com.trane.statTrack.team.Team;
-import com.trane.statTrack.review.Review;
-import com.trane.statTrack.team.TeamRepository;
-import com.trane.statTrack.user.User;
-import com.trane.statTrack.user.UserRepository;
+import com.trane.statTrack.model.Fixture;
+import com.trane.statTrack.repository.FixtureRepository;
+import com.trane.statTrack.model.Team;
+import com.trane.statTrack.model.Review;
+import com.trane.statTrack.repository.TeamRepository;
+import com.trane.statTrack.model.User;
+import com.trane.statTrack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

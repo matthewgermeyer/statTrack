@@ -1,8 +1,5 @@
-package com.trane.statTrack.review;
+package com.trane.statTrack.model;
 
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.fixture.Fixture;
-import com.trane.statTrack.user.User;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 

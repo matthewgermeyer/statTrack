@@ -1,4 +1,4 @@
-package com.trane.statTrack.util;
+package com.trane.statTrack.model;
 
 public class FlashMessage {
     private String message;

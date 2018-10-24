@@ -1,7 +1,12 @@
-package com.trane.statTrack.team;
+package com.trane.statTrack.service;
+
+import com.trane.statTrack.model.Team;
+
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface TeamService {
   List<Team> findAll();
   Team findById(Long id);

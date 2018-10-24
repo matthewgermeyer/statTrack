@@ -1,7 +1,6 @@
-package com.trane.statTrack.user;
+package com.trane.statTrack.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.trane.statTrack.config.BaseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

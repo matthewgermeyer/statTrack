@@ -18,6 +18,6 @@
         <property name="format_sql">true</property>
 
         <!-- Names the annotated entity classes -->
-        <mapping class="com.trane.statTrack.player.Player"/>
+        <mapping class="com.trane.statTrack.model.Player"/>
     </session-factory>
 </hibernate-configuration>

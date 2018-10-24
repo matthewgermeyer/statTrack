@@ -1,5 +1,6 @@
-package com.trane.statTrack.review;
+package com.trane.statTrack.repository;
 
+import com.trane.statTrack.model.Review;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.security.access.prepost.PreAuthorize;

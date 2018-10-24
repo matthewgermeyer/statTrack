@@ -1,11 +1,10 @@
 package com.trane.statTrack.model;
 
-import static com.trane.statTrack.team.Team.generateArsenalTeam;
-import static com.trane.statTrack.team.Team.generateSpursTeam;
+import static com.trane.statTrack.model.Team.generateArsenalTeam;
+import static com.trane.statTrack.model.Team.generateSpursTeam;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import com.trane.statTrack.team.Team;
 import org.junit.Before;
 import org.junit.Test;
 

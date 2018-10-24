@@ -1,8 +1,5 @@
-package com.trane.statTrack.statcard;
+package com.trane.statTrack.model;
 
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.detail.Detail;
-import com.trane.statTrack.util.Action;
 import org.apache.commons.lang3.time.StopWatch;
 
 import java.util.ArrayList;

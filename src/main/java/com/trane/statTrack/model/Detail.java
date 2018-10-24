@@ -1,7 +1,4 @@
-package com.trane.statTrack.detail;
-
-import com.trane.statTrack.config.BaseEntity;
-import com.trane.statTrack.util.Action;
+package com.trane.statTrack.model;
 
 import java.util.ArrayList;
 import java.util.List;
